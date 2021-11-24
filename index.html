@@ -5,93 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinit Co</title>
-
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Link font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Genos:wght@100&family=Lobster&family=Montserrat:wght@100;300;500&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
-<body style="background-color:rgb(110, 109, 109);" >
-
+<body >
     <header>
-        <img src="./img/Fondo.jpg" width="500px" height="500px" alt="Fondo 1"> 
-        <img src="./img/Fondo 2.jpg" width="820px" height="500px" alt="Fondo 2"> 
-        <img src="./img/Fondo 3.jpg" width="250px" height="250px" alt="Fondo 3">
-        <img src="./img/Fondo 4.jpg" width="250px" height="250px" alt="Fondo 4">
-        <img src="./img/Logo_infitco.jpg" width="250px" height="250px" alt="Logo Infinit Co">
-        <img src="./img/Fondo 5.jpg" width="320px" height="200px" alt="Fondo 5">
-        <img src="./img/Fondo 6.jpg" width="238px" height="250px" alt="Fondo 5">
-        <hr>
-        <nav>   
-            <ul>
 
-                <li>
-                    <a href="./index.html" style="color:rgb(255, 255, 255)">HOME</a>    
-                </li>   
-                <br>
-                
-                <li>
-                <a href="./Pages/Skaters.html" style="color:rgb(255, 255, 255)">SKATERS</a>    
-                </li>   
-                <br>
-                <li>
-                    <a href="./Pages/Longboard.html" style="color:rgb(255, 255, 255)">LONGBOARD</a>
-                </li> 
-                <br>
-                <li>
-                    <a href="./Pages/Tshirt.html" style="color:rgb(255, 255, 255)" > T-SHIRT</a>
-                </li> 
-                <br>
-                <li>
-                    <a href="./Pages/Registrarse.html" style="color:rgb(255, 255, 255)" >REGISTRARSE</a>
-                </li>
-                <br>
-                <li>
-                    <a href="./Pages/Iniciar_Sesion.html" style="color:rgb(255, 255, 255)" >INICIO DE SESION</a>
-                </li>
-                <br>
+        <!-- Menu de navegacion -->
+        <nav class="menu">  
+            <img src="./img/Logo_infitco.jpg" alt="LogoInfinitCo" class="menu__img">
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="./index.html">HOME</a></li>   
+                <li class="menu__item"><a href="./Pages/Skaters.html">SKATERS</a></li>   
+                <li class="menu__item"><a href="./Pages/Longboard.html">LONGBOARD</a></li> 
+                <li class="menu__item"><a href="./Pages/Tshirt.html">T-SHIRT</a></li> 
+                <li class="menu__item"><a href="./Pages/Registrarse.html">REGISTRARSE</a></li>
+                <li class="menu__item"><a href="./Pages/Iniciar_Sesion.html">INICIO DE SESION</a></li>
             </ul>
-
         </nav>
 
     </header>
 
     <main>
+        <!-- Fondo Imagenes -->
+        <div class="fondo">
+            <img src="./img/Fondo.jpg" alt="Imagen1" class="fondo__img1"><img src="./img/Fondo 2.jpg" alt="Imagen2" class="fondo__img2">
+            <img src="./img/Fondo 3.jpg" alt="Imagen3" class="fondo__img3"><img src="./img/Fondo 4.jpg" alt="Imagen4" class="fondo__img4"><img src="./img/Fondo 5.jpg" alt="Imagen5" class="fondo__img5"><img src="./img/Fondo 6.jpg" alt="Imagen6" class="fondo__img6">
+            <img src="./img/Fondo 7.jpg" alt="Imagen7" class="fondo__img7">
+            <img src="./img/Fondo 8.jpg" alt="Imagen8" class="fondo__img8">
+            <img src="./img/Fondo 9.jpg" alt="Imagen9" class="fondo__img9">
+            <img src="./img/Fondo 10.jpg" alt="Imagen10" class="fondo__img10">
+            <img src="./img/Fondo 11.jpg" alt="Imagen11" class="fondo__img11">
+            <img src="./img/Fondo 12.jpg" alt="Imagen12" class="fondo__img12">
+            <img src="./img/Fondo 13.jpg" alt="Imagen13" class="fondo__img13">
+            <img src="./img/Fondo 14.jpg" alt="Imagen14" class="fondo__img14">
+            <img src="./img/Fondo 15.jpg" alt="Imagen15" class="fondo__img15">
+            <img src="./img/Fondo 16.jpg" alt="Imagen16" class="fondo__img16">
+            <img src="./img/Fondo 17.jpg" alt="Imagen17" class="fondo__img17">
+        </div>
 
+        <!--Botones -->
+        <div class="botones">
+            <button class=botones__1> VER MÁS</button>
+            <button class=botones__2> VER MÁS</button>
+            <button class=botones__3> VER MÁS</button>
+        </div>
+        
+        <!--Parrafos que van con los botones -->
+        <div class="contenido">
+            <p class=contenido_p1> SKATERS>> </p>
+            <p class=contenido_p2> LONGBOARD>> </p>
+            <p class=contenido_p3> T-SHIRT>> </p>
+            
+        </div>
     </main>
 
-
     <footer>
-        <hr>
-        <ul>
-            <li >
-                <a href="./Pages/Mi_Cuenta.html" >Mi cuenta </a>
-            </li>
+        <!--Link a otras paginas en footer -->
 
-            <li>
-                <a href="./Pages/Guia_de_talles.html">Guia de talles</a>
-            </li>
+        <div class="footer">
+            <img src="./img/foot_1.jpg" alt="PiedePagina" class="footer__img">
+            <ul class="footer__lista">
+                <li class="footer__item"><a href="./Pages/Mi_Cuenta.html" >Mi cuenta </a></li>
+                <li class="footer__item"><a href="./Pages/Guia_de_talles.html">Guia de talles</a></li>
+                <li class="footer__item"><a href="./Pages/Cambios_devol.html">Cambios y devoluciones</a></li>
+                <li class="footer__item"><a href="./Pages/Sucursales.html">Sucursales</a></li>
+                <li class="footer__item"><a href="./Pages/Nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
 
-            <li>
-                <a href="./Pages/Cambios_devol.html">Cambios y devoluciones</a>
-            </li>
+        <div class="iconos">
+            <a href="https://www.facebook.com/"target="blank"> <img src="./img/Logo_Facebook.png" alt="LogoFacebook" class="iconos__face">"</a>
+            <a href="https://www.instagram.com/" target= "blank"> <img src="./img/Logo_Instagram.png" alt="LogoInstagram" class="iconos__insta"></a>
+            <a href="https://twitter.com/" target="blank "> <img src="./img/Logo_Twitter.png" alt="LogoTwitter" class="iconos__twitt"></a>
 
-            <li>
-                <a href="./Pages/Sucursales.html">Sucursales</a>
-            </li>
+        </div>
 
-            <li>
-                <a href="./Pages/Nosotros.html">Nosotros</a>
-            </li>
-        </ul>
-        <hr>
-        <a href="https://www.facebook.com/"target="blank"> <img src="./img/Logo_Facebook.png" width="20px" height="20px" alt="Logo Facebook"> 
-        </a>
 
-        <a href="https://www.instagram.com/" target= "blank"> <img src="./img/Logo_Instagram.png" width="20px" height="20px" alt="Logo Instagram">
-        </a>
-
-        <a href="https://twitter.com/" target="blank "> <img src="./img/Logo_Twitter.png" width="20px" height="20px" alt="Logo Twitter">
-        </a>
     </footer>
-
 
 
 </body>
