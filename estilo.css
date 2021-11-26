@@ -1,6 +1,6 @@
 /* Aplicado para todo el archivo HTML*/
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /*__________________________________________*/
@@ -34,8 +34,11 @@ body
 
 .menu__img
 {
-    width:100px;
-    height:100px;
+    width:60px;
+    height:50px;
+    position: relative;
+    left: 20px;
+
     
 }
 
@@ -53,7 +56,7 @@ body
 }
 
 /*__________________________________________*/
-/*Imagenes de fondo*/
+/*Imagenes de fondo PAGINA HOME*/
 
 /*Skater Naranja*/
 .fondo__img1
@@ -338,12 +341,12 @@ body
 {
     display:flex;
     align-items:center; /* Solo se usa para el contenedor padre*/   
-    justify-content:space-between;   
+    justify-content:space-between;  
 }
 
 .footer__lista
 {
-    display: flex;
+    display:flex;
     justify-content:space-evenly; 
     width:100%;
 }
@@ -387,8 +390,8 @@ body
 
 .iconos__face
 {
-    width:40px;
-    height:40px;
+    width:35px;
+    height:35px;
     position:absolute;
     top:3050px;
     left:1100px;
@@ -396,18 +399,223 @@ body
 
 .iconos__insta
 {
-    width:40px;
-    height:40px;
+    width:35px;
+    height:35px;
     position:absolute;
     top:3050px;
-    left:1160px;
+    left:1150px;
 }
 
 .iconos__twitt
-{
-    width:40px;
-    height:40px;
+{   
+    width:35px;
+    height:35px;
     position:absolute;
     top:3050px;
-    left:1220px;
+    left:1200px;
+}
+
+
+
+/*__________________________________________*/
+/*PAGINA SKATERS*/
+
+
+/*__________________________________________*/
+/*TITULO PAGINA SKATERS*/
+
+.titulo__ppal
+{
+    color: white;
+    font-size: 47px;
+    font-weight:700;
+    position: absolute;
+    left:130px;
+    top:85px;
+    
+}
+
+
+
+/*__________________________________________*/
+/*IMAGENES BARRA LATERAL PAGINA SKATER*/
+
+.pagina2__img1
+{
+    width: 420px;
+    height:400px;
+    position:absolute;
+    top:180px;
+    left:120px;
+
+}
+.pagina2__img2
+{
+    width: 350px;
+    height:400px;
+    position:absolute;
+    top:1780px;
+    left:140px;
+}
+
+.pagina2__img3
+{
+    width: 350px;
+    height:500px;
+    position:absolute;
+    top:2230px;
+    left:140px;
+}
+
+/*__________________________________________*/
+/*PAGINAS IMAGENES PRODUCTOS*/
+
+
+.venta
+{
+    display: flex;
+    width: 55%;
+}
+
+.venta__item
+{
+    position: relative;
+    left:600px;
+    top: 110px;
+    text-align: center;
+    margin:20px;
+    margin-bottom: 100px;
+    border: solid 30px rgba(255, 255, 255, 0.08);
+    height: 350px;
+    }
+
+.venta__1
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__2
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__3
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__4
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__5
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__6
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__7
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__8
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__9
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__10
+{
+    width: 170px;
+    height:300px;
+}
+
+
+.venta__11
+{
+    width: 170px;
+    height:300px;
+}
+
+
+.venta__12
+{
+    width: 170px;
+    height:300px;
+}
+
+.venta__13
+{
+    width: 170px;
+    height:300px;
+}
+
+
+.venta__14
+{
+    width: 170px;
+    height:300px;
+}
+
+
+.venta__15
+{
+    width: 170px;
+    height:300px;
+}
+
+/*__________________________________________*/
+/*IMAGENES BARRA LATERAL PAGINA LONGBOARD*/
+
+.pagina3__borde
+{
+    position: absolute;
+    display: block;
+    width: 115px;
+    height: 2765px;
+}
+.pagina3__img1
+{
+    width: 420px;
+    height:400x;
+    position:absolute;
+    top:180px;
+    left:125px;
+}
+
+.pagina3__img2
+{
+    width: 420px;
+    height:360px;
+    position:absolute;
+    top:1500px;
+    left:125px;
+}
+
+.pagina3__img3
+{
+    width: 420px;
+    height:380px;
+    position:absolute;
+    top:2100px;
+    left:125px;
 }
