@@ -4,34 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinit Co</title>
-    <link rel="stylesheet" href="../normalize.css">
-    <!-- Link font google -->
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Genos:wght@100&family=Lobster&family=Montserrat:wght@100;300;500&family=Open+Sans+Condensed:wght@300&family=Orbitron&family=Oswald:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../estilo.css">
+    <!--Title-->
+    <title>Infinit Co</title>
+
 </head>
 
-    <body>
-        <header>
-            <!-- MENU-->
-                <div class="container">
-                    <nav class="menu">  
-                        <img src="../img/Logo_infitco.jpg" alt="LogoInfinitCo" class="menu__img">
-                        <ul class="menu__lista">
-                            <li class="menu__item"><a href="../index.html">HOME</a></li>   
-                            <li class="menu__item"><a href="./Skaters.html">SKATERS</a></li>   
-                            <li class="menu__item"><a href="./Longboard.html">LONGBOARD</a></li> 
-                            <li class="menu__item"><a href="./Tshirt.html">T-SHIRT</a></li> 
-                            <li class="menu__item"><a href="./Registrarse.html">REGISTRARSE</a></li>
-                            <li class="menu__item"><a href="./Iniciar_Sesion.html">INICIO DE SESION</a></li>
-                        </ul>
-                    </nav>
-                </div>
-        </header>
+<header>
+    <body>    
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo_infitco.jpg" alt="Logo" width="50px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto p-2 bd-highlight text-center ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Skaters.html">Skater</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Longboard.html">Longboard</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./Tshirt.html">T-Shirt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Registrarse.html" >Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Iniciar_Sesion.html" >Inicio de Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--EndNavBar-->
+</header>
+
         
         <main>
-
             <!-- 1ER GRID SKATER-->
             <section class="gridVenta">
                         <div class="gridVenta__container">
@@ -60,29 +84,74 @@
             </section>
 
         </main>
-            
     
-        <!-- LINKS A OTRAS PAGINAS-->
-        <footer>
-        <div class="footer">
-            <ul class="footer__lista">
-                <li class="footer__item"><a href="./Mi_Cuenta.html" >Mi cuenta </a></li>
-                    <li class="footer__item"><a href="../Guia_de_talles.html">Guia de talles</a></li>
-                    <li class="footer__item"><a href="../Cambios_devol.html">Cambios y devoluciones</a></li>
-                    <li class="footer__item"><a href="../Sucursales.html">Sucursales</a></li>
-                    <li class="footer__item"><a href="../Nosotros.html">Nosotros</a></li>
-            </ul>
-        </div>
+
+    <footer>
+        <footer class="container-fluid bg-grey py-5">
+                <div class="row">
+                    <div class="col-sm-5"> 
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="logo-part">
+                                    <img src="../img/Logo_infitco.jpg" class="logo-footer">
+                                    <p> Infinit Co es una cadena de locales multimarca que inició sus actividades en 1978
+                                        con tres locales ubicados en Martínez, San Isidro y Belgrano. Estos mismos,
+                                        funcionaban no solo como locales comerciales, sino también como puntos de encuentro
+                                        de un público jóven</p>
+                                    <p>Copyright © 2018 Infinit Co Todos los derechos reservados</p>
+                                </div>
+                            </div>
         
-        <!-- REDES SOCIALES-->
-        <div class="footer__iconos">
-            <a href="https://www.facebook.com/"target="blank"> <img src="../img/Logo_Facebook.png" alt="LogoFacebook" class="footer__face">"</a>
-            <a href="https://www.instagram.com/" target= "blank"> <img src="../img/Logo_Instagram.png" alt="LogoInstagram" class="footer__insta"></a>
-            <a href="https://twitter.com/" target="blank "> <img src="../img/Logo_Twitter.png" alt="LogoTwitter" class="footer__twitt"></a>
-        </div>
+                            <div class="col-sm-5 px-4">
+                                <h6> Nosotros</h6>
+                                <a href="#" class="btn-footer"> Nuestra Historia </a><br>
+                                <a href="#" class="btn-footer"> Contáctanos</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-5 px-4">
+                                    <h6> Más</h6>
+                                    <div class="row ">
+                                        <div class="col-sm-5">
+                                            <ul>
+                                                <li> <a href="../index.html"> Home</a> </li>
+                                                <li> <a href="./Nosotros.html"> Nosotros</a> </li>
+                                                <li> <a href="./Guia_de_talles.html"> Guia de Talles</a> </li>
+                                                <li> <a href="./Cambios_devol.html"> Cambios y Devoluciones</a> </li>
+                                                <li> <a href="./Registrarse.html"> Registrarse</a> </li>
+                                                <li> <a href="./Iniciar_Sesion.html"> Inicio de Sesión</a> </li>
+                                            </ul>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-6 ">
+                                    <h6> Redes Sociales</h6>
+                                    <div class="social">
+                                        <a href="https://www.facebook.com/" target="blank"> <img class="social-face"
+                                                src="../img/Logo_Facebook.png" alt="LogoFacebook"> </a>
+                                        <a href="https://www.instagram.com/" target="blank"> <img class="social-insta"
+                                                src="../img/Logo_Instagram.png" alt="LogoInstagram"> </a>
+                                        <a href="https://twitter.com/" target="blank"> <img class="social-twit"
+                                                src="../img/Logo_Twitter.png" alt="LogoTwitter"> </a>
+        
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </footer>
         
-    
-    
+            <!--Scriptjs-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        
     </body>
-    </html>
+</html>
+        
