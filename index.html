@@ -4,90 +4,307 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinit Co</title>
-    <link rel="stylesheet" href="normalize.css">
-    <!-- Link font google -->
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Genos:wght@100&family=Lobster&family=Montserrat:wght@100;300;500&family=Open+Sans+Condensed:wght@300&family=Orbitron&family=Oswald:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="estilo.css">
+    <!--Title-->
+    <title>Infinit Co</title>
 </head>
 
-<body >
-    <header>
 
-        <!-- Menu de navegacion -->
-        <nav class="menu">  
-            <img src="./img/Logo_infitco.jpg" alt="LogoInfinitCo" class="menu__img">
-            <ul class="menu__lista">
-                <li class="menu__item"><a href="./index.html">HOME</a></li>   
-                <li class="menu__item"><a href="./Pages/Skaters.html">SKATERS</a></li>   
-                <li class="menu__item"><a href="./Pages/Longboard.html">LONGBOARD</a></li> 
-                <li class="menu__item"><a href="./Pages/Tshirt.html">T-SHIRT</a></li> 
-                <li class="menu__item"><a href="./Pages/Registrarse.html">REGISTRARSE</a></li>
-                <li class="menu__item"><a href="./Iniciar_Sesion.html">INICIO DE SESION</a></li>
-            </ul>
-        </nav>
+</head>
 
-    </header>
+<header>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Repo Git/DW-23500-TB/img/Logo_infitco.jpg" alt="Logo" width="50px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <main>
-        <!-- Fondo Imagenes -->
-        <div class="fondo">
-            <img src="./img/Fondo.jpg" alt="Imagen1" class="fondo__img1"><img src="./img/Fondo 2.jpg" alt="Imagen2" class="fondo__img2">
-            <img src="./img/Fondo 3.jpg" alt="Imagen3" class="fondo__img3"><img src="./img/Fondo 4.jpg" alt="Imagen4" class="fondo__img4"><img src="./img/Fondo 5.jpg" alt="Imagen5" class="fondo__img5"><img src="./img/Fondo 6.jpg" alt="Imagen6" class="fondo__img6">
-            <img src="./img/Fondo 7.jpg" alt="Imagen7" class="fondo__img7">
-            <img src="./img/Fondo 8.jpg" alt="Imagen8" class="fondo__img8">
-            <img src="./img/Fondo 9.jpg" alt="Imagen9" class="fondo__img9">
-            <img src="./img/Fondo 10.jpg" alt="Imagen10" class="fondo__img10">
-            <img src="./img/Fondo 11.jpg" alt="Imagen11" class="fondo__img11">
-            <img src="./img/Fondo 12.jpg" alt="Imagen12" class="fondo__img12">
-            <img src="./img/Fondo 13.jpg" alt="Imagen13" class="fondo__img13">
-            <img src="./img/Fondo 14.jpg" alt="Imagen14" class="fondo__img14">
-            <img src="./img/Fondo 15.jpg" alt="Imagen15" class="fondo__img15">
-            <img src="./img/Fondo 16.jpg" alt="Imagen16" class="fondo__img16">
-            <img src="./img/Fondo 17.jpg" alt="Imagen17" class="fondo__img17">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto p-2 bd-highlight text-center ">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="../Repo Git/DW-23500-TB/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Repo Git/DW-23500-TB/Pages/Skaters.html">Skater</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Repo Git/DW-23500-TB/Pages/Longboard.html">Longboard</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Repo Git/DW-23500-TB/Pages/Longboard.html">T-Shirt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Repo Git/DW-23500-TB/Pages/Longboard.html" >Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Repo Git/DW-23500-TB/Pages/Longboard.html" >Inicio de Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--EndNavBar-->
+</header>
+
+<body>
+    <!--Carrousel-->
+    <div class="row">
+        <div class="col-sm-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399711.jpeg" class=" d-flex w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399731.jpeg" class=" d-flex w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399699.jpeg" class=" d-flex w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399725.jpeg" class=" d-flex w-100" alt="...">
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Antes</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!--EndCarrousel-->
+            </div>
         </div>
 
-        <!--Botones -->
-        <div class="botones">
-            <button class=botones__1> VER MÁS</button>
-            <button class=botones__2> VER MÁS</button>
-            <button class=botones__3> VER MÁS</button>
+        <!--Titulo/Parrafo-->
+        <div class="col-sm-6">
+            <div class="container1">
+                <h1 class="container1-titulo1">INFINIT CO</h1>
+                <h2 class="container1-titulo2"> BREAK LIMITS</h2>
+                <p class="container1-parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officiis! Quas sit sapiente reiciendis quae au Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nihil fugit enim beatae ipsum corporis dicta magnam porro sapiente? Ea cupiditate, voluptatum accusantium fugit voluptate dignissimos facere laudantium eveniet expedita!Lorem,</p>
+            </div>
         </div>
+        <!--EndTitulo/Parrafo-->                
         
-        <!--Parrafos que van con los botones -->
-        <div class="contenido">
-            <p class=contenido_p1> SKATERS>> </p>
-            <p class=contenido_p2> LONGBOARD>> </p>
-            <p class=contenido_p3> T-SHIRT>> </p>
+        <!--Galeria de imagenes-->
+        <div class="container2">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="col-img1-gall zoom" src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399703.jpeg" alt="">
+            </div>
+
+            <div class="col-sm-3">
+                <img class="col-img3-gall zoom" src="../Imagenes proyecto/Nueva carpeta/pexels-photo-5872365.jpeg" alt="">
+                <img class="col-img2-gall zoom" src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399757.jpeg" alt="">
+            </div>
+
+            <div class="col-sm-3">
+                <img class="col-img4-gall zoom" src="../Imagenes proyecto/Nueva carpeta/pexels-photo-9399723.jpeg" alt="">
+                <img class="col-img5-gall zoom" src="../Imagenes proyecto/Nueva carpeta/pexels-photo-5325855.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--EndaGaleria de imagenes-->
+
+
+    <!--Cards-->
+        <!--Cards titulo-->
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="titulo-logboard"> LONGBOARDS</h1>
+            </div> 
             
+            <!--Cards Longboard-->
+            <div class="container3">
+                <div class="row">
+                <div class="col-sm-2 px-4 ">
+                    <div class="card mt-4 zoom">
+                        <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Long 2.jpg">
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Infinit Co Longboard 1</h5>
+                                <p class="card-text">$22990</p>
+                                <a href="../Repo Git/DW-23500-TB/Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                            </div>
+                    </div>
+                </div>   
+                <div class="col-sm-2 px-4">
+                    <div class="card mt-4 zoom">
+                        <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Long 3.jpg"/>
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Infinit Co 2</h5>
+                                <p class="card-text">$22990</p>
+                                <a href="../Repo Git/DW-23500-TB/Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2 px-4">
+                    <div class="card mt-4 zoom">
+                        <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Long 5.jpg"/>
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Infinit Co Longboard 3</h5>
+                                <p class="card-text">$22990</p>
+                                <a href="../Repo Git/DW-23500-TB/Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2 px-4">
+                    <div class="card mt-4 zoom">
+                        <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/long_7.jpg"/>
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Infinit Co Longboard 4</h5>
+                                <p class="card-text">$22990</p>
+                                <a href="../Repo Git/DW-23500-TB/Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    <!--EndCardsLongboards-->
 
-    <footer>
-        <!--Link a otras paginas en footer -->
+    <div class="container4">
+        <div class="row">
+            <div class="col-sm-12">
+        </div> 
+    </div> 
 
-        <div class="footer">
-            <img src="./img/foot_1.jpg" alt="PiedePagina" class="footer__img">
-            <ul class="footer__lista">
-                <li class="footer__item"><a href="./Pages/Mi_Cuenta.html" >Mi cuenta </a></li>
-                <li class="footer__item"><a href="./Pages/Guia_de_talles.html">Guia de talles</a></li>
-                <li class="footer__item"><a href="./Pages/Cambios_devol.html">Cambios y devoluciones</a></li>
-                <li class="footer__item"><a href="./Pages/Sucursales.html">Sucursales</a></li>
-                <li class="footer__item"><a href="./Pages/Nosotros.html">Nosotros</a></li>
-            </ul>
+    <!--Cards Titulo-->
+    <div class="row">
+        <div class="col-sm-6">
+            <h1 class="titulo-skater"> SKATERS</h1>
+        </div> 
+
+    <!--Cards Skaters-->
+    <div class="container5">
+            <div class="row">
+                <div class="col-sm-2 px-4 ">
+                    <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Skater_13.jpg"/>
+                        <div sclass='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Skater 1</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="../Repo Git/DW-23500-TB/Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
+                        </div>
+                </div>
+            </div>   
+            <div class="col-sm-2 px-4 ">
+                <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Skater_14.jpg"/>
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Skater 2</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="../Repo Git/DW-23500-TB/Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 px-4 ">
+                <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Skater_15.jpg"/>
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Skater 3</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="../Repo Git/DW-23500-TB/Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 px-4 ">
+                <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="../Repo Git/DW-23500-TB/img/Skater_16.jpg"/>
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Skater 4</h5>
+                            <p class="card-text">$22990</p>
+                            <a href=".../Repo Git/DW-23500-TB/Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
+                        </div>
+                </div>
+            </div>
+        </div>  
+    </div> 
+    <!--EndCardSkater-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    </script>
+</body>
+
+
+<footer>
+    <footer class="container-fluid bg-grey py-5">
+            <div class="row">
+                <div class="col-sm-5"> 
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="logo-part">
+                                <img src="../Repo Git/DW-23500-TB/img/Logo_infitco.jpg" class="logo-footer">
+                                <p> Infinit Co es una cadena de locales multimarca que inició sus actividades en 1978
+                                    con tres locales ubicados en Martínez, San Isidro y Belgrano. Estos mismos,
+                                    funcionaban no solo como locales comerciales, sino también como puntos de encuentro
+                                    de un público jóven</p>
+                                <p>Copyright © 2018 Infinit Co Todos los derechos reservados</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 px-4">
+                            <h6> Nosotros</h6>
+                            <a href="#" class="btn-footer"> Nuestra Historia </a><br>
+                            <a href="#" class="btn-footer"> Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="row">
+                        <div class="col-sm-5 px-4">
+                            <h6> Más</h6>
+                            <div class="row ">
+                                <div class="col-sm-5">
+                                    <ul>
+                                        <li> <a href="../Repo Git/DW-23500-TB/index.html"> Home</a> </li>
+                                        <li> <a href="../Repo Git/DW-23500-TB/Pages/Nosotros.html"> Nosotros</a> </li>
+                                        <li> <a href="../Repo Git/DW-23500-TB/Pages/Guia_de_talles.html"> Guia de Talles</a> </li>
+                                        <li> <a href="../Repo Git/DW-23500-TB/Pages/Cambios_devol.html"> Cambios y Devoluciones</a> </li>
+                                        <li> <a href="../Repo Git/DW-23500-TB/Pages/Registrarse.html"> Registrarse</a> </li>
+                                        <li> <a href="../Repo Git/DW-23500-TB/Pages/Iniciar_Sesion.html"> Inicio de Sesión</a> </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 ">
+                            <h6> Redes Sociales</h6>
+                            <div class="social">
+                                <a href="https://www.facebook.com/" target="blank"> <img class="social-face"
+                                        src="../Repo Git/DW-23500-TB/img/Logo_Facebook.png" alt="LogoFacebook"> </a>
+                                <a href="https://www.instagram.com/" target="blank"> <img class="social-insta"
+                                        src="../Repo Git/DW-23500-TB/img/Logo_Instagram.png" alt="LogoInstagram"> </a>
+                                <a href="https://twitter.com/" target="blank"> <img class="social-twit"
+                                        src="../Repo Git/DW-23500-TB/img/Logo_Twitter.png" alt="LogoTwitter"> </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="iconos">
-            <a href="https://www.facebook.com/"target="blank"> <img src="./img/Logo_Facebook.png" alt="LogoFacebook" class="iconos__face">"</a>
-            <a href="https://www.instagram.com/" target= "blank"> <img src="./img/Logo_Instagram.png" alt="LogoInstagram" class="iconos__insta"></a>
-            <a href="https://twitter.com/" target="blank "> <img src="./img/Logo_Twitter.png" alt="LogoTwitter" class="iconos__twitt"></a>
-
         </div>
-
-
     </footer>
 
-
-</body>
 </html>
