@@ -4,7 +4,8 @@ body
     background-color:#97858D;
 }
 
-
+/*____________________________________________*/
+/* Tit1,tit2 y parrafo*/
 .container1-titulo1
 {
     font-size: 80px;
@@ -31,6 +32,7 @@ body
 }
 
 /*____________________________________________*/
+/*Galeria de imagenes*/
 
 .container2
 {
@@ -98,9 +100,8 @@ body
 }
 
 
-
-
 /*____________________________________________*/
+/* Card Longboard/Skater*/
 
 .container3
 {
@@ -188,6 +189,8 @@ body
 
 }
 
+
+/* Titulo Longboard*/
 .titulo-logboard
 {
     font-size: 50px;
@@ -205,6 +208,7 @@ body
     
 }
 
+/* Titulo Skater*/
 .titulo-skater
 {
     font-size: 50px;
@@ -221,7 +225,14 @@ body
     
 }
 
-/*Animacion TITULOS VENTA*/
+
+
+
+
+/*____________________________________________*/
+
+/*Animacion TITULOS CARD*/
+
 @keyframes entradaizq {
     from {
         -webkit-transform: translate3d(-100%, 0, 0);
@@ -234,6 +245,8 @@ body
         transform: translate3d(0, 0, 0);
     }
 }
+
+/*____________________________________________*/
 
 /*Animacion CARD*/
 @keyframes entradacard {
@@ -257,6 +270,8 @@ body
 
 
 
+/*____________________________________________*/
+/*Animacion Zoom imagenes*/
 
 .zoom 
 {
@@ -267,15 +282,19 @@ body
     transform: scale(0.8); 
 }
 
+
 /*____________________________________________*/
+/*Footer*/
+
+
 /*Background Footer*/
 .bg-grey {
     background: #292929;
     height: 60vh;
 }
 
-/*Logo Footer*/
 
+/*Logo Footer*/
 .logo-footer {
     margin-bottom: 20px;
     height: 65px;
@@ -299,7 +318,6 @@ footer h6
     margin-bottom: 35px;
     position: relative;
 }
-
 
 
 .btn-footer 
@@ -372,6 +390,7 @@ a:hover
     color: #f5f5f5 !important;
 
 }
+
 
 
 
