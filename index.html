@@ -9,6 +9,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./normalize.css">
     <!--Title-->
     <title>Infinit Co</title>
 </head>
@@ -56,8 +57,9 @@
 
 <main>
     <!--Carrousel-->
+    <div class="container1">
     <div class="row">
-        <div class="col-sm-5">
+        <div class="col-md-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -86,8 +88,7 @@
         </div>
 
         <!--Titulo/Parrafo-->
-        <div class="col-sm-6">
-            <div class="container1">
+        <div class="col-md-6">
                 <h1 class="container1-titulo1">INFINIT CO</h1>
                 <h2 class="container1-titulo2"> BREAK LIMITS</h2>
                 <p class="container1-parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, officiis! Quas sit sapiente reiciendis quae au Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nihil fugit enim beatae ipsum corporis dicta magnam porro sapiente? Ea cupiditate, voluptatum accusantium fugit voluptate dignissimos facere laudantium eveniet expedita!Lorem,</p>
@@ -97,130 +98,153 @@
         <!--EndTitulo/Parrafo-->                
         
 
-        <!--Galeria de imagenes-->
-        <div class="container2">
+<!--Galeria de imagenes-->
+    <div class="container2-1">
         <div class="row">
-            <div class="col-sm-4">
-                <img class="col-img1-gall zoom" src="./img/pexels-photo-9399703.jpeg" alt="img1">
+            <div class="col-md-12">
+                <img src="../../353e847a71c94__afterheader_dsktp_navidad.jpg" class="img_oferta w-100" alt="img_oferta">
+            </div>
+        </div>  
+    </div>   
+    
+    <div class="container2">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="col-img1-gall galeria__img" src="./img/pexels-photo-9399703.jpeg" alt="img1">
             </div>
 
-            <div class="col-sm-3">
-                <img class="col-img3-gall zoom" src="./img/pexels-photo-5872365.jpeg" alt="img2">
-                <img class="col-img2-gall zoom" src="./img/pexels-photo-9399757.jpeg" alt="img3">
+            <div class="col-md-3">
+                <img class="col-img3-gall galeria__img" src="./img/pexels-photo-5872365.jpeg" alt="img2">
+                <img class="col-img2-gall galeria__img" src="./img/pexels-photo-9399757.jpeg" alt="img3">
             </div>
 
-            <div class="col-sm-3">
-                <img class="col-img4-gall zoom" src="./img/pexels-photo-9399723.jpeg" alt="img4">
-                <img class="col-img5-gall zoom" src="./img/pexels-photo-5325855.jpeg" alt="img5">
+            <div class="col-md-3">
+                <img class="col-img4-gall galeria__img" src="./img/pexels-photo-9399723.jpeg" alt="img4">
+                <img class="col-img5-gall galeria__img" src="./img/pexels-photo-5325842.jpeg" alt="img5">
             </div>
         </div>
-    </div>
     </div>
     <!--EndaGaleria de imagenes-->
 
 
-    <!--Cards-->
 
-        <!--Cards titulo-->
+    <!--Cards titulo-->
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="titulo-logboard"> LONGBOARDS
+        </div>  
+    </div> 
+        
+    <div class="row">
+        <div class="col-md-10">
+            <p class="p-logboard"> PRODUCTOS/NOVEDADES </p>
+        </div>  
+    </div> 
+
+    <!--EndCards titulo-->
+    <!--Cards Longboard-->
+    <div class="container3">
         <div class="row">
-            <div class="col-sm-6">
-                <h1 class="titulo-logboard"> LONGBOARDS</h1>
-            </div> 
-            <!--EndCards titulo-->
-            
-            <!--Cards Longboard-->
-            <div class="container3">
-                <div class="row">
-                <div class="col-sm-2 px-4 ">
-                    <div class="card mt-4 zoom">
-                        <img class='mx-auto img-thumbnail' src="./img/Long 2.jpg">
-                            <div class='cvp'>
-                                <h5 class="card-title font-weight-bold">Infinit Co Longboard 1</h5>
-                                <p class="card-text">$22990</p>
-                                <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
-                            </div>
-                    </div>
-                </div>   
-                <div class="col-sm-2 px-4">
-                    <div class="card mt-4 zoom">
-                        <img class='mx-auto img-thumbnail' src="./img/Long 3.jpg"/>
-                            <div class='cvp'>
-                                <h5 class="card-title font-weight-bold">Infinit Co 2</h5>
-                                <p class="card-text">$22990</p>
-                                <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
-                            </div>
-                    </div>
+            <div class="col-md-2 px-4 ">
+                <div class="card mt-4 zoom "> 
+                    <img class='mx-auto img-thumbnail' src="./img/Long 2.jpg">
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Longboard 1</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                        </div>
                 </div>
+            </div>  
 
-                <div class="col-sm-2 px-4">
-                    <div class="card mt-4 zoom">
-                        <img class='mx-auto img-thumbnail' src="./img/Long 5.jpg"/>
-                            <div class='cvp'>
-                                <h5 class="card-title font-weight-bold">Infinit Co Longboard 3</h5>
-                                <p class="card-text">$22990</p>
-                                <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
-                            </div>
-                    </div>
+            <div class="col-md-2 px-4">
+                <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="./img/Long 3.jpg"/>
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co 2</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                        </div>
                 </div>
+            </div>
 
-                <div class="col-sm-2 px-4">
-                    <div class="card mt-4 zoom">
-                        <img class='mx-auto img-thumbnail' src="./img/long_7.jpg"/>
-                            <div class='cvp'>
-                                <h5 class="card-title font-weight-bold">Infinit Co Longboard 4</h5>
-                                <p class="card-text">$22990</p>
-                                <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
-                            </div>
-                    </div>
+            <div class="col-md-2 px-4">
+                <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="./img/Long 5.jpg"/>
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Longboard 3</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 px-4">
+                <div class="card mt-4 zoom">
+                    <img class='mx-auto img-thumbnail' src="./img/long_7.jpg"/>
+                        <div class='cvp'>
+                            <h5 class="card-title font-weight-bold">Infinit Co Longboard 4</h5>
+                            <p class="card-text">$22990</p>
+                            <a href="./Pages/Longboard.html" class="btn cart px-auto">Ver más</a>
+                        </div>
                 </div>
             </div>
         </div>
+    </div>
     <!--EndCardsLongboards-->
 
 
-    <!--Cards Titulo-->
+
+
+
+<!--Cards Titulo-->
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
             <h1 class="titulo-skater"> SKATERS</h1>
         </div> 
         <!--EndCards titulo-->
+    <div class="row">
+        <div class="col-md-10">
+            <p class="p-logboard"> PRODUCTOS/NOVEDADES </p>
+        </div>  
+    </div> 
 
     <!--Cards Skaters-->
     <div class="container5">
             <div class="row">
-                <div class="col-sm-2 px-4 ">
+                <div class="col-md-2 px-4 ">
                     <div class="card mt-4 zoom">
-                    <img class='mx-auto img-thumbnail' src="./img/Skater_13.jpg"/>
+                        <img class='mx-auto img-thumbnail' src="./img/Skater_13.jpg"/>
                         <div sclass='cvp'>
                             <h5 class="card-title font-weight-bold">Infinit Co Skater 1</h5>
                             <p class="card-text">$22990</p>
                             <a href="./Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
                         </div>
+                    </div>
+                </div>   
+            
+                <div class="col-md-2 px-4 ">
+                    <div class="card mt-4 zoom">
+                        <img class='mx-auto img-thumbnail' src="./img/Skater_14.jpg"/>
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Infinit Co Skater 2</h5>
+                                <p class="card-text">$22990</p>
+                                <a href="./Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
+                            </div>
+                    </div>
                 </div>
-            </div>   
-            <div class="col-sm-2 px-4 ">
-                <div class="card mt-4 zoom">
-                    <img class='mx-auto img-thumbnail' src="./img/Skater_14.jpg"/>
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">Infinit Co Skater 2</h5>
-                            <p class="card-text">$22990</p>
-                            <a href="./Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
-                        </div>
-                </div>
-            </div>
 
-            <div class="col-sm-2 px-4 ">
-                <div class="card mt-4 zoom">
-                    <img class='mx-auto img-thumbnail' src="./img/Skater_15.jpg"/>
-                        <div class='cvp'>
-                            <h5 class="card-title font-weight-bold">Infinit Co Skater 3</h5>
-                            <p class="card-text">$22990</p>
-                            <a href="./Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
-                        </div>
+                <div class="col-md-2 px-4 ">
+                    <div class="card mt-4 zoom">
+                        <img class='mx-auto img-thumbnail' src="./img/Skater_15.jpg"/>
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Infinit Co Skater 3</h5>
+                                <p class="card-text">$22990</p>
+                                <a href="./Pages/Skaters.html" class="btn cart px-auto">Ver más</a>
+                            </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-sm-2 px-4 ">
+            <div class="col-md-2 px-4 ">
                 <div class="card mt-4 zoom">
                     <img class='mx-auto img-thumbnail' src="./img/Skater_16.jpg"/>
                         <div class='cvp'>
@@ -241,9 +265,9 @@
 <footer>
     <footer class="container-fluid bg-grey py-5">
             <div class="row">
-                <div class="col-sm-5"> 
+                <div class="col-md-6"> 
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-md-6">
                             <div class="logo-part">
                                 <img src="./img/Logo_infitco.jpg" class="logo-footer">
                                 <p> Infinit Co es una cadena de locales multimarca que inició sus actividades en 1978
@@ -254,7 +278,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-5 px-4">
+                        <div class="col-md-6 px-4">
                             <h6> Nosotros</h6>
                             <a href="#" class="btn-footer"> Nuestra Historia </a><br>
                             <a href="#" class="btn-footer"> Contáctanos</a>
@@ -262,12 +286,12 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5">
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-sm-5 px-4">
+                        <div class="col-md-6 px-4">
                             <h6> Más</h6>
                             <div class="row ">
-                                <div class="col-sm-5">
+                                <div class="col-md-6">
                                     <ul>
                                         <li> <a href="./index.html"> Home</a> </li>
                                         <li> <a href="./Pages/Nosotros.html"> Nosotros</a> </li>
@@ -277,11 +301,10 @@
                                         <li> <a href="./Pages/Iniciar_Sesion.html"> Inicio de Sesión</a> </li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
 
-                        <div class="col-sm-6 ">
+                        <div class="col-md-6 ">
                             <h6> Redes Sociales</h6>
                             <div class="social">
                                 <a href="https://www.facebook.com/" target="blank"> <img class="social-face"
@@ -290,8 +313,7 @@
                                         src="./img/Logo_Instagram.png" alt="LogoInstagram"> </a>
                                 <a href="https://twitter.com/" target="blank"> <img class="social-twit"
                                         src="./img/Logo_Twitter.png" alt="LogoTwitter"> </a>
-
-
+                            
                             </div>
                         </div>
                     </div>

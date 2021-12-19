@@ -1,6 +1,6 @@
 
-body
-{
+
+body{
     background-color:#97858D;
 }
 
@@ -31,81 +31,79 @@ body
     margin-top:100px;
 }
 
+
+/*____________________________________________*/
+
+
 /*____________________________________________*/
 /*Galeria de imagenes*/
 
+.container2-1
+{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom:50px;  
+}
 .container2
 {
-    margin-top: 200px;
+    display: flex;
+    margin-top: 30px;
     margin-bottom:200px;
+    margin-left: 30px;
     
 }
 
 .col-img1-gall
 {
-    width: 500px;
-    height: 600px;
     margin-left: 50px;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-name: pulse ;
-    overflow:hidden;
+    height: 700px;
+    width: 800px;
 }
 
 .col-img2-gall
 {
-    width: 280px;
-    height:310px;
-    margin-left: 120px;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-name: pulse ;
-    overflow:hidden;
+    margin-left: 40px;
+    width: 300px;
 }
 
 .col-img3-gall
 {
-    width: 280px;
-    height: 270px;
-    margin-left: 120px;
-    margin-bottom: 20px;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-name: pulse ;
-    overflow:hidden;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    height: 325px;
+    width: 300px;
 }
 
 
 .col-img4-gall
-{
-    width: 400px;
-    height: 250px;
-    margin-left: 100px;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-name: pulse ;
-    overflow:hidden;
+{   
+    margin-left: 25px;
 }
 
 .col-img5-gall
 {
-    width: 400px;
-    height: 320px;
-    margin-left: 100px;
+    margin-left: 25px;
     margin-top: 30px;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-name: pulse ;
-    overflow:hidden;
 }
 
+.galeria__img:hover{
+    opacity: 50%;
+}
+
+
+.p-logboard
+{
+    font-size: 20px;
+    text-align: center;    
+    font-weight: 400;
+}
 
 /*____________________________________________*/
 /* Card Longboard/Skater*/
 
 .container3
 {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     border-top:1px white double;
     border-bottom:1px white double;
     padding-top: 80px;
@@ -139,7 +137,7 @@ body
 
 .card {
     width: fit-content;
-    margin-left: 200px;
+    margin-left: 180px;
     
 }
 
@@ -269,13 +267,12 @@ body
 
 
 
-
 /*____________________________________________*/
 /*Animacion Zoom imagenes*/
 
 .zoom 
 {
-    transition: transform .2s;     
+    transition: transform .6s;     
 }
 
 .zoom:hover {
@@ -294,9 +291,15 @@ body
 }
 
 
+.container-fluid
+{
+    width: 220vh;
+}
 /*Logo Footer*/
-.logo-footer {
+.logo-footer 
+{
     margin-bottom: 20px;
+    margin-left: 20px;
     height: 65px;
     width: 65px;
 }
@@ -306,6 +309,10 @@ footer {
     color: grey;
 }
 
+p
+{
+    margin-left:20px;
+}
 /*Tamaño de los parrafos y de los links*/
 footer p, a 
 {
@@ -397,7 +404,37 @@ a:hover
 /*__________________________________________*/
 /*PAGINA SKATERS*/
 
+.img_borde
+{
+    width: 65px;
+    height: 2300px;
+}
 
+.pg_sk
+{
+    margin-top: 100px;
+    font-size: 50px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .gridVenta__container
 {
     display:grid;   
@@ -547,7 +584,7 @@ a:hover
     grid-row:5/5;
     margin-top: 100px;
 }
-
+*/
 /*__________________________________________*/
 /*IMAGENES BARRA LATERAL PAGINA LONGBOARD*/
 
