@@ -1,55 +1,256 @@
-
-
-body{
-    background-color:#97858D;
+body
+{
+    background-color:white;
+    font-family: 'Oswald', sans-serif;
 }
 
-/*____________________________________________*/
+
+.nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.nav-item :before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.nav-item :hover:before, .nav-item :focus:before, .nav-item :active:before {
+    left: 0;
+    right: 0;
+}
+
+
+
+.container1
+{
+    height: 100vh;
+}
+
+.cont1__img1
+{
+    height: 100vh;
+    width: 100%;
+}
+
+.container2
+{
+    height: 120vh;
+    display: flex;
+}
+
+
+.container2-1
+{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    margin-top:50px;
+}
+
+
+.container2_titulo
+{
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 700;
+    text-align:center;
+    margin-top: 100px;
+}
+
+.container2_subt
+{
+    font-size: 20px;
+    margin-left: 2px;
+    font-weight: 700;
+    text-align:center;
+    color:#97858D;
+}
+
+#carouselExampleControls
+{
+    display: flex;
+    width: 60%;
+    height: 120%;   
+}
+
+.carousel-control-next-icon
+{
+    background-color: tomato;
+}
+
+.carousel-control-prev-icon
+{
+    background-color: tomato;
+}
+
+.carousel-caption 
+{
+    color:black;
+    margin-top:200px;
+}
+
+
+.container2-2_titulo
+{
+    font-size: 40px;
+    margin-left: 150px;
+    font-weight: 700;
+    text-align:center;
+    margin-top: 100px;
+}
+
+
+.container2-2_img1
+{
+    margin-left: 160px;
+    height: 80px;
+    width: 80px;    
+}
+
+.container2-2_img2
+{
+    margin-left: 50px;
+    height: 80px;
+    width: 80px;
+}
+
+.container2-2_img3
+{
+    margin-left: 50px;
+    height: 80px;
+    width: 80px;
+}
+
+.container2-2_img4
+{
+    margin-left: 120px;
+    margin-top:50px;
+    height: 280px;
+    width: 450px;
+}
+
+
+.icono
+{
+    transition: transform .6s;     
+}
+
+.icono:hover {
+    transform: scale(1.10); 
+}
+
+
+.container2-2_btn
+{
+    display: flex;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 19px;
+    margin-left:315px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: 200;
+
+}
+
+a:hover 
+{
+    text-decoration: none;
+    color: #f5f5f5 !important;
+
+}
+
+.container2-2_btn-grow 
+{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.container2-2_btn:hover, .container2-2_btn-grow:focus, .container2-2_btn-grow:active 
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.containter4
+{
+    width: 70%;
+}
+
+.container4
+{
+    height: 70vw;
+    margin-top: 50px;
+}
+
+
 /* Tit1,tit2 y parrafo*/
-.container1-titulo1
+.container4-titulo1
 {
     font-size: 80px;
     font-weight: 700;
-    margin-left: 50px;
     margin-top:130px;
 }
 
-.container1-titulo2
+.container4-titulo2
 {
     font-size: 35px;
     font-weight: 400;
     font-style:italic;
     margin-top:150px;
-    margin-left: 300px;
     letter-spacing: 5px;
 }
 
-.container1-parrafo
+.container4-parrafo
 {
     font-size: 20px;
-    margin-left: 55px;
     margin-top:100px;
 }
 
-
-/*____________________________________________*/
-
+.container5
+{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 80px;
+} 
 
 /*____________________________________________*/
 /*Galeria de imagenes*/
 
-.container2-1
-{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom:50px;  
-}
-.container2
+.container6
 {
     display: flex;
     margin-top: 30px;
     margin-bottom:200px;
-    margin-left: 30px;
+    margin-left: 60px;
     
 }
 
@@ -74,7 +275,6 @@ body{
     width: 300px;
 }
 
-
 .col-img4-gall
 {   
     margin-left: 25px;
@@ -91,17 +291,53 @@ body{
 }
 
 
+
+/*____________________________________________*/
+/* Card Longboard/Skater*/
+
+/* Titulo Longboard*/
+.titulo-logboard
+{
+    font-size: 50px;
+    font-weight:900;
+    margin-top: 15px;   
+    margin-bottom: 35px;
+    margin-left: 25px;
+    font-style:italic;
+    color:#211313;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-name: entradaizq ;
+    overflow:hidden;
+    
+    
+}
+
+/* Titulo Skater*/
+.titulo-skater
+{
+    font-size: 50px;
+    font-weight:900;
+    margin-top: 15px;   
+    margin-bottom: 35px;
+    margin-left: 25px;
+    font-style:italic;
+    color:#211313;
+    animation-iteration-count: 3;
+    animation-duration: 3s;
+    animation-name: entradaizq ;
+    overflow:hidden;
+    
+}
+
+
 .p-logboard
 {
     font-size: 20px;
     text-align: center;    
     font-weight: 400;
 }
-
-/*____________________________________________*/
-/* Card Longboard/Skater*/
-
-.container3
+.container7
 {
     margin-bottom: 50px;
     border-top:1px white double;
@@ -111,9 +347,9 @@ body{
     background-color: white;
 }
 
-.container5
+.container8
 {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     border-top:1px white double;
     border-bottom:1px white double;
     padding-top: 80px;
@@ -187,47 +423,25 @@ body{
 
 }
 
+/*Animacion CARD*/
+@keyframes entradacard {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 400px, 0);
+        transform: translate3d(0, 400px, 0);
+    }
 
-/* Titulo Longboard*/
-.titulo-logboard
-{
-    font-size: 50px;
-    font-weight:900;
-    margin-top: 15px;   
-    margin-bottom: 35px;
-    margin-left: 25px;
-    font-style:italic;
-    color:#211313;
-    animation-iteration-count: 1;
-    animation-duration: 4s;
-    animation-name: entradaizq ;
-    overflow:hidden;
-    
-    
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.animate__entradacard{
+    -webkit-animation-name: entradacard;
+    animation-name: entradacard;
 }
 
-/* Titulo Skater*/
-.titulo-skater
-{
-    font-size: 50px;
-    font-weight:900;
-    margin-top: 15px;   
-    margin-bottom: 35px;
-    margin-left: 25px;
-    font-style:italic;
-    color:#211313;
-    animation-iteration-count: 3;
-    animation-duration: 3s;
-    animation-name: entradaizq ;
-    overflow:hidden;
-    
-}
-
-
-
-
-
-/*____________________________________________*/
 
 /*Animacion TITULOS CARD*/
 
@@ -285,7 +499,9 @@ body{
 
 
 /*Background Footer*/
-.bg-grey {
+
+.bg-grey
+{
     background: #292929;
     height: 60vh;
 }
@@ -295,7 +511,10 @@ body{
 {
     width: 220vh;
 }
+
+
 /*Logo Footer*/
+
 .logo-footer 
 {
     margin-bottom: 20px;
@@ -305,24 +524,27 @@ body{
 }
 
 /*Color letra Footer*/
-footer {
+
+
+footer 
+{
     color: grey;
 }
 
-p
+.footer-p
 {
-    margin-left:20px;
-}
-/*Tamaño de los parrafos y de los links*/
-footer p, a 
-{
-    font-size: 12px;
+    font-size: 13px;
 }
 
+/*Tamaño de los parrafos y de los links*/
+
+
 /*Posicion del H6 con respecto a los botones*/
+
 footer h6 
 {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    margin-left: 25px;
     position: relative;
 }
 
@@ -372,31 +594,26 @@ footer h6
     height:35px;
 }
 
-
-footer ul li
-{
-    list-style: none;
-    display: block;
-}
-
-footer ul 
-{
-    padding-left: 0;
-}
-
 footer ul  li a
 {
-    text-decoration: none;
     color: grey;
     text-decoration:none;
+    list-style: none;
+    font-size: 12px;
 }
 
+.txt-footer
+{
+    text-decoration:none;
+    list-style: none;
+}
 a:hover 
 {
     text-decoration: none;
     color: #f5f5f5 !important;
 
 }
+
 
 
 
