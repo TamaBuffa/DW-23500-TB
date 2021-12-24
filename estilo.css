@@ -270,7 +270,8 @@ a:hover
     font-size: 20px;
     margin-top:120px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 35px;
+    margin-right:30px;
 }
 
 
@@ -292,12 +293,12 @@ a:hover
 .container-fluid7
 {
     width: 100%;
-    justify-items: center;
 }
 
 
 .container-fluid7__galeria__img1
 {
+
     height: 700px;
     width: 800px;
 }
