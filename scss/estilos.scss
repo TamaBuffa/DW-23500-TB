@@ -1,0 +1,741 @@
+/* VARIABLES*/
+
+$tamañoTitulo1:40px; //Titulo T-shirt
+$tamañoSubtitulos:20px; //Subtitulos
+
+body{
+    background-color:white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*_______________________*/
+/*MENU*/
+
+.nav-item{
+    display: inline-block;
+    vertical-align: middle;
+    font-size:16px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 51%;
+        right: 51%;
+        bottom: 0;
+        background: white;
+        height: 2px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover{
+        &:before{
+            left: 0;
+            right: 0;
+        }
+    }
+
+    &:focus{
+        &:before{
+            left: 0;
+            right: 0;
+        }
+    }
+
+    &:active{
+        &:before{
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+/*_______________________*/
+/*INDEX*/
+/*Imagen ppal*/
+
+.container-fluid1{
+    width: 100%;
+}
+
+/*__________________________*/
+/*Carrousel 1 T-SHIRT titulo-subtitulo */
+.container-fluid2{
+    width: 100%;
+    
+    &__titulo{
+        font-size: $tamañoTitulo1;
+        font-weight: 700;
+        margin-top:100px;
+        text-align:center;
+    }
+
+    &__subt{
+        font-size: $tamañoSubtitulos;
+        margin-left: 2px;
+        font-weight: 700;
+        text-align:center;
+        color:#97858D;
+    }
+}
+
+
+/*Carrousel 1 T-SHIRT tamaños */
+.container-fluid2-1{
+    width: 80%;
+
+    &__slide{
+        width: 100%;
+    }
+
+    &.control-next-icon{
+        background-color: tomato;
+    }
+
+    &.control-prev-icon{
+        background-color: tomato;
+    }
+}
+
+
+/*__________________________*/
+/*Shop online */
+
+.container-fluid2-2{
+    width:50%;
+    text-align: center;  
+}
+
+.container-fluid2-3{
+    width: 190%;
+
+    &__titulo{
+        font-size:$tamañoTitulo;
+        font-weight: 700;
+        margin-top:100px;    
+    }
+
+    &__img{
+        width:90px;
+        height: 90px;
+
+        &__img.icono{
+            transition: transform .6s; 
+        }
+
+        &__img.icono:hover{
+            transform: scale(1.10); 
+        }
+    }
+}
+
+/*__________________________*/
+/*Imagen+boton compra*/
+
+.container-fluid2-4{
+    width: 100%;
+
+    &__img4{
+        margin-top:50px;
+        height: 280px;
+        width: 430px;
+    }
+
+    &__btn{
+        display:flex;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 6px 19px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 40px;
+        font-weight: 200;
+        margin-left: 300px;
+    }
+
+    &__btn-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+
+    &__btn:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    &__btn-grow:focus{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    &__btn-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    a:hover{
+        text-decoration: none;
+        color: #f5f5f5 !important;
+    }
+}
+
+/*__________________________*/
+/*Cartelofertas*/
+
+.container-fluid3{
+    width: 100%;
+
+    &__img{
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-top:80px;
+        margin-bottom: 80px;
+    }
+}
+
+/*__________________________*/
+/*Carrousel2-img*/
+.container-fluid4{
+    width: 100%;
+
+    &__slide{
+        width: 100%;
+    }
+}
+
+/*__________________________*/
+/*Titulo/Parrafo*/
+
+.container-fluid5{
+    width: 50%;
+}
+
+.container-fluid5-1{
+    width: 200%;
+
+    &__titulo1{
+        font-size: 77px;
+        font-weight: 700;
+        text-align: center;
+        margin-top:130px;
+    }
+
+    &__titulo2{
+        font-size: 30px;
+        font-weight: 400;
+        font-style:italic;
+        letter-spacing: 5px;
+        margin-top:160px;
+        margin-left: 30px; 
+    }
+
+    &__parrafo{
+        font-size: 20px;
+        margin-top:120px;
+        text-align: center;
+        margin-left: 35px;
+        margin-right:30px;
+    }
+}
+
+/*__________________________*/
+/*Logos*/
+.container-fluid6{
+    width: 100%;
+    
+    &__img{
+        width: 100%;
+        margin-top:100px;
+        margin-bottom: 120px;
+    }
+} 
+
+/*____________________________________________*/
+/*Galeria de imagenes*/
+.container-fluid7{
+    width: 100%;
+
+    &__galeria__img1{
+        height: 700px;
+        width: 800px;
+    }
+    
+    &__galeria__img2{
+        width: 100%;
+        height: 350px;
+    }
+    
+    &__galeria__img3{
+        margin-bottom: 10px;
+        height: 325px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    &__galeria__img4{   
+        width: 100%;
+    }
+
+    &__galeria__img5{
+        width: 100%;
+        margin-top: 25px;
+    }
+    &__galeria:hover{
+        opacity: 50%;
+    }
+}
+
+
+/*____________________________________________*/
+/*Cards titulo-subtitulo Longboard*/
+
+.container-fluid8{
+    width: 100%;
+    text-align: center;
+
+    &__titulol{
+        font-size: 50px;
+        font-weight:900;
+        margin-top: 100px;   
+        margin-bottom: 60px;   
+        margin-left: 25px;
+        font-style:italic;
+        color:#211313;
+        animation-iteration-count: 1;
+        animation-duration: 4s;
+        animation-name: entradaizq ;
+        overflow:hidden;
+    }
+}
+
+.container-fluid9
+{
+    width: 100%;
+    &__subtl
+    {
+        text-align: center;
+        margin-bottom: 60px;  
+        font-size: $tamañoSubtitulos;
+        font-weight: 400;
+    }
+}
+/*____________________________________________*/
+/*Cards Longboard*/
+
+.container-fluid10{
+    width: 100%;
+}
+
+.cart {
+    background-color: #212121;
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 900;
+    width: 100%;
+    height: 39px;
+    padding-top: 9px;
+    box-shadow: 0px 5px 10px #212121;
+}
+
+.card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    width: 80%;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-name: entradacard ;
+    overflow:hidden;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom: 80px;
+
+    &-title{
+        font-size: 12px;
+        text-align: center;
+        margin: 2px 3px;
+    }
+
+    &-text{
+        font-size: 15px;
+        text-align: center;
+        margin-top:9px;
+        font-weight: 600;
+    }
+    
+    &-body{
+    width: 100%;
+    }
+}
+
+.img-thumbnail 
+{
+    border: none;
+    height: 230px;
+    width: 120px;    
+}
+
+.btn 
+{
+    border-radius: 0;
+}
+
+@keyframes entradacard {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 400px, 0);
+        transform: translate3d(0, 400px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__entradacard{
+    -webkit-animation-name: entradacard;
+    animation-name: entradacard;
+}
+
+
+@keyframes entradaizq {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.zoom{
+    transition: transform .8s;    
+
+    &:hover{
+        transform: scale(0.8); 
+    }
+    
+}
+
+/*____________________________________________*/
+/*Cards titulo-subtitulo Skaters*/
+
+.container-fluid11{
+    width: 100%;
+
+    &__titulosk{
+        font-size: 50px;
+        font-weight:900;
+        margin-top: 100px;   
+        margin-bottom: 60px;   
+        margin-left: 25px;
+        font-style:italic;
+        color:#211313;
+        animation-iteration-count: 1;
+        animation-duration: 4s;
+        animation-name: entradaizq ;
+        overflow:hidden;
+    }
+}
+
+.container-fluid12{
+    width: 100%;
+
+    &__subts{
+        text-align: center;
+        margin-bottom: 60px;  
+        font-size: $tamañoSubtitulos;
+        font-weight: 400;
+    }
+}
+
+/*____________________________________________*/
+/*Cards Skaters*/
+.container-fluid13{
+    width: 100%;
+}
+
+/*____________________________________________*/
+/*Footer*/
+
+footer{
+    background: #292929;
+    height: 60vh;
+    width:100%;
+    height: 50%;
+    color: grey;
+
+    & .logo-footer {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        height: 35px;
+        width: 35px;
+    }
+
+    & .footer-p{
+        font-size: 13px;
+    }
+
+    & .lista-footer {
+        margin-bottom: 20px;
+        margin-left: 25px;
+        position: relative;
+    }
+
+    & ul  li a {
+        color: grey;
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 43px;
+        font-size: 13px;
+        padding: 7px 30px;
+        line-height: 47px;
+    }
+    
+    & .btn-footer:hover {
+        text-decoration: none;
+    }
+
+    & .txt-footer{
+        text-decoration:none;
+        list-style: none;
+    }
+
+    & a:hover 
+    {
+        text-decoration: none;
+        color: #f5f5f5 !important;
+    }
+
+    & .social-face
+    {
+        width:35px;
+        height:35px;
+    }
+
+    & .social-insta
+    {
+        width:35px;
+        height:35px;
+    }
+
+    & .social-twit
+    {
+        width:35px;
+        height:35px;
+    }
+
+}
+
+::placeholder 
+{
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+
+
+/*__________________________________________*/
+/*PAGINAS*/
+.container-fluid1
+{
+    width: 100%;
+    
+    &__tituloSk
+    {
+        margin-top: 100px;
+        font-size: 50px;
+        margin-left: 40px;
+        font-weight: 700;
+    }
+}
+
+
+/*__________________________________________*/
+.container-fluid2
+{
+    width: 100%;
+}
+
+
+/*___________________*/
+/* Registrarse*/
+
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+
+    &.form-control{
+        border-radius:1rem;
+    }
+
+    &-form form{
+        padding: 14%;
+    }
+    &-form form .row{
+        margin-bottom: -7%;
+    }
+    &-form h3{
+        margin-bottom: 8%;
+        margin-top: -10%;
+        text-align: center;
+        color:#97858D;
+    }
+    &-form .btnContact 
+    {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
+        background: #dc3545;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+
+
+}
+
+
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/*___________________*/
+/* Suscripcion*/
+
+.newsletter-subscribe 
+{
+    color:#313437;
+    background-color:#fff;
+    padding:100px 100px;
+
+    & p {
+        color:#7d8285;
+        line-height:1.5;
+    }
+
+    & h2 {
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:25px;
+    line-height:1.5;
+    padding-top:0;
+    margin-top:0;
+    color:inherit;
+    }
+
+    &.intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 25px;
+    }
+    
+    &.intro p {
+    margin-bottom:35px;
+    }
+
+    & form {
+    justify-content:center;
+    }
+
+    & form .form-control{
+    background:#eff1f4;
+    border:none;
+    border-radius:3px;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:9px;
+    height:45px;
+    margin-right:10px;
+    min-width:250px;
+    }
+
+    & form .btn {
+    padding:16px 32px;
+    border:none;
+    background:none;
+    box-shadow:none;
+    text-shadow:none;
+    opacity:0.9;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:0.4px;
+    line-height:1;
+    }
+
+    & form .btn:hover {
+        opacity:1;
+    }
+    
+    & form .btn:active {
+    transform:translateY(1px);
+    }
+
+    & form .btn-primary {
+    background-color:#055ada !important;
+    color:#fff;
+    outline:none !important;
+    }
+}
+
+/*_______________________________*/
+/* Inicio de sesion*/
+#login{
+    &.container.row.column.box{
+        margin-top: 150px;
+        margin-bottom:200px;
+        max-width: 600px;
+        height: 320px;
+        border: 1px solid black;
+        background-color: white;
+        padding: 20px;
+    }
+    &.container.form{
+        padding: 20px;
+        margin-top: -85px;
+    }
+}
+
+.btn{
+    border: 1px solid black;
+}
