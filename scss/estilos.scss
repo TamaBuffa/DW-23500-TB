@@ -1,15 +1,66 @@
 /* VARIABLES*/
-
 $tamañoTitulo1:40px; //Titulo T-shirt
 $tamañoSubtitulos:20px; //Subtitulos
+$fontWeight700: 700; //FontW-700
 
+/*Mixins*/
+@mixin tamanio ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+};
+
+$body:green;
+/*Mapas*/
+
+// Custom.scss
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// 5. Add additional custom code here
 body{
-    background-color:white;
     font-family: 'Oswald', sans-serif;
 }
 
 /*_______________________*/
 /*MENU*/
+/*
+.row>*{
+    border:2px solid black;
+}
+*/
+
+.marquesina{
+    width: 100%;
+    margin-top: 80px;
+    padding: 3px 0px px 0px;
+}
+
+.marquesina span{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+	margin: 0px 50px;
+}
+
+
 
 .nav-item{
     display: inline-block;
@@ -64,18 +115,21 @@ body{
 /*INDEX*/
 /*Imagen ppal*/
 
-.container-fluid1{
+.imagenppal{
+    display:block;
     width: 100%;
+    margin:auto;
 }
 
 /*__________________________*/
 /*Carrousel 1 T-SHIRT titulo-subtitulo */
-.container-fluid2{
-    width: 100%;
-    
+.carrouselTshirt{
+    width: 65%;
+    margin-left:85px;
+
     &__titulo{
         font-size: $tamañoTitulo1;
-        font-weight: 700;
+        font-weight: $fontWeight700;
         margin-top:100px;
         text-align:center;
     }
@@ -83,72 +137,60 @@ body{
     &__subt{
         font-size: $tamañoSubtitulos;
         margin-left: 2px;
-        font-weight: 700;
+        font-weight: $fontWeight700;
         text-align:center;
         color:#97858D;
     }
 }
 
-
 /*Carrousel 1 T-SHIRT tamaños */
-.container-fluid2-1{
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: tomato;
+}
+    
+.carousel slide
+{
     width: 80%;
-
-    &__slide{
-        width: 100%;
-    }
-
-    &.control-next-icon{
-        background-color: tomato;
-    }
-
-    &.control-prev-icon{
-        background-color: tomato;
-    }
 }
 
 
 /*__________________________*/
 /*Shop online */
 
-.container-fluid2-2{
-    width:50%;
-    text-align: center;  
-}
-
-.container-fluid2-3{
-    width: 190%;
+.shopOnline{ 
+    width: 100%;
 
     &__titulo{
-        font-size:$tamañoTitulo;
-        font-weight: 700;
+        text-align: center; 
+        font-size:$tamañoTitulo1;
+        font-weight: $fontWeight700;
         margin-top:100px;    
     }
 
-    &__img{
-        width:90px;
-        height: 90px;
+    &__icono{
+        display:block;
+        margin:auto;
+        @include tamanio (90px,90px);
+        transition: transform .6s;
+    } 
 
-        &__img.icono{
-            transition: transform .6s; 
-        }
-
-        &__img.icono:hover{
-            transform: scale(1.10); 
-        }
+    &__icono:hover{
+        transform: scale(1.10); 
     }
-}
 
-/*__________________________*/
-/*Imagen+boton compra*/
+    &__txtIcono
+    {
+        display: block;
+        text-align: center;
+    }
 
-.container-fluid2-4{
-    width: 100%;
-
-    &__img4{
+    &__img{
+        display:block;
+        margin:auto;
         margin-top:50px;
-        height: 280px;
-        width: 430px;
+        @include tamanio ( 500px,300px);
     }
 
     &__btn{
@@ -160,10 +202,9 @@ body{
         padding: 6px 19px;
         margin-top:20px;
         margin-bottom: 20px;
-        width: 100px;
-        height: 40px;
+        @include tamanio ( 100px,40px);
         font-weight: 200;
-        margin-left: 300px;
+        margin-left: 350px;
     }
 
     &__btn-grow {
@@ -192,50 +233,29 @@ body{
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
+
     a:hover{
         text-decoration: none;
         color: #f5f5f5 !important;
     }
+
 }
 
 /*__________________________*/
-/*Cartelofertas*/
-
-.container-fluid3{
+/*Logos*/
+.logo__img{
     width: 100%;
+    margin-top:100px;
+    margin-bottom: 120px;
 
-    &__img{
-        width: 100%;
-        left: 0;
-        right: 0;
-        margin-top:80px;
-        margin-bottom: 80px;
-    }
 }
-
-/*__________________________*/
-/*Carrousel2-img*/
-.container-fluid4{
-    width: 100%;
-
-    &__slide{
-        width: 100%;
-    }
-}
-
 /*__________________________*/
 /*Titulo/Parrafo*/
-
-.container-fluid5{
-    width: 50%;
-}
-
-.container-fluid5-1{
-    width: 200%;
+.textoNosotros{
 
     &__titulo1{
         font-size: 77px;
-        font-weight: 700;
+        font-weight: $fontWeight700;
         text-align: center;
         margin-top:130px;
     }
@@ -258,67 +278,99 @@ body{
     }
 }
 
+
 /*__________________________*/
-/*Logos*/
-.container-fluid6{
+/*Cartelofertas*/
+
+.cartelOferta{
     width: 100%;
-    
+
     &__img{
         width: 100%;
-        margin-top:100px;
-        margin-bottom: 120px;
+        left: 0;
+        right: 0;
+        margin-top:80px;
+        margin-bottom: 80px;
     }
-} 
-
+}
 /*____________________________________________*/
 /*Galeria de imagenes*/
-.container-fluid7{
-    width: 100%;
+.galeria{
 
-    &__galeria__img1{
-        height: 700px;
-        width: 800px;
+    &__img1{
+        @include tamanio (500px,700px);
+
     }
     
-    &__galeria__img2{
-        width: 100%;
-        height: 350px;
+    &__img2{
+        @include tamanio ( 350px,300px);
     }
     
-    &__galeria__img3{
-        margin-bottom: 10px;
-        height: 325px;
-        width: 100%;
+    &__img3{
+        @include tamanio (350px,375px);
         margin-top: 25px;
     }
 
-    &__galeria__img4{   
-        width: 100%;
+    &__img4{  
+        @include tamanio (350px,300px);
     }
 
-    &__galeria__img5{
-        width: 100%;
+    &__img5{
+        @include tamanio (350px,375px);
         margin-top: 25px;
     }
-    &__galeria:hover{
+
+    &:hover{
         opacity: 50%;
     }
 }
 
+.container1{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(151, 133, 141, 0.6);
+}
+
+.icon {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container1:hover .overlay {
+    opacity: 1;
+}
 
 /*____________________________________________*/
 /*Cards titulo-subtitulo Longboard*/
 
-.container-fluid8{
-    width: 100%;
-    text-align: center;
+.venta{
 
-    &__titulol{
+    &__titulo{
+        width: 100%;
+        align-items: center;
         font-size: 50px;
         font-weight:900;
-        margin-top: 100px;   
+        margin-top: 150px;   
         margin-bottom: 60px;   
-        margin-left: 25px;
         font-style:italic;
         color:#211313;
         animation-iteration-count: 1;
@@ -326,14 +378,9 @@ body{
         animation-name: entradaizq ;
         overflow:hidden;
     }
-}
 
-.container-fluid9
-{
-    width: 100%;
-    &__subtl
-    {
-        text-align: center;
+
+    &__subts{
         margin-bottom: 60px;  
         font-size: $tamañoSubtitulos;
         font-weight: 400;
@@ -342,18 +389,13 @@ body{
 /*____________________________________________*/
 /*Cards Longboard*/
 
-.container-fluid10{
-    width: 100%;
-}
-
 .cart {
     background-color: #212121;
     color: white;
     font-size: 12px;
     margin-top: 10px;
     font-weight: 900;
-    width: 100%;
-    height: 39px;
+    @include tamanio (100%,39px);
     padding-top: 9px;
     box-shadow: 0px 5px 10px #212121;
 }
@@ -363,13 +405,10 @@ body{
     border-radius: 5px;
     padding-bottom: 10px;
     width: 80%;
-    animation-iteration-count: 1;
-    animation-duration: 4s;
-    animation-name: entradacard ;
     overflow:hidden;
     margin-left:30px;
     margin-right:30px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     &-title{
         font-size: 12px;
@@ -389,35 +428,14 @@ body{
     }
 }
 
-.img-thumbnail 
-{
+.img-thumbnail {
+    display: block;
     border: none;
-    height: 230px;
-    width: 120px;    
+    @include tamanio ( 120px,230px);
 }
 
-.btn 
-{
+.btn {
     border-radius: 0;
-}
-
-@keyframes entradacard {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 400px, 0);
-        transform: translate3d(0, 400px, 0);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.animate__entradacard{
-    -webkit-animation-name: entradacard;
-    animation-name: entradacard;
 }
 
 
@@ -444,71 +462,81 @@ body{
 }
 
 /*____________________________________________*/
-/*Cards titulo-subtitulo Skaters*/
+/*Video*/
 
-.container-fluid11{
+video{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    top:0;
+    left: 0;
     width: 100%;
-
-    &__titulosk{
-        font-size: 50px;
-        font-weight:900;
-        margin-top: 100px;   
-        margin-bottom: 60px;   
-        margin-left: 25px;
-        font-style:italic;
-        color:#211313;
-        animation-iteration-count: 1;
-        animation-duration: 4s;
-        animation-name: entradaizq ;
-        overflow:hidden;
-    }
+    height: 100%;
+    object-fit: cover;
 }
 
-.container-fluid12{
-    width: 100%;
+/*___________________*/
+/* Suscripcion*/
 
-    &__subts{
-        text-align: center;
-        margin-bottom: 60px;  
-        font-size: $tamañoSubtitulos;
-        font-weight: 400;
-    }
+label{
+    margin-left: 120px;
 }
 
-/*____________________________________________*/
-/*Cards Skaters*/
-.container-fluid13{
-    width: 100%;
+#email{
+    margin-left: 60px;
+}
+
+.suscripcion{
+    margin-bottom:50px;
+}
+
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    opacity: 0.9;
+    margin-top:20px;
+    padding: 10px;
+    width: 110px;
+    margin-left: 50%;
+    cursor:pointer;
+    transform: translateX(-50%);
 }
 
 /*____________________________________________*/
 /*Footer*/
 
 footer{
-    background: #292929;
-    height: 60vh;
-    width:100%;
-    height: 50%;
-    color: grey;
+        background: #292929;
+        @include tamanio (100%,50%);
+        color: grey;
 
-    & .logo-footer {
+        & ul li a {
+            color: grey;
+            text-decoration: none;
+            list-style: none;
+            font-size: 12px; 
+        }
+}
+
+.footer{
+    &__logo {
         margin-bottom: 20px;
-        margin-left: 20px;
-        height: 35px;
-        width: 35px;
+        margin-left: 10px;
+        @include tamanio (65px,65px);
     }
 
-    & .footer-p{
+    &__p{
         font-size: 13px;
     }
 
-    & .lista-footer {
+    &__lista {
         margin-bottom: 20px;
         margin-left: 25px;
         position: relative;
     }
 
-    & ul  li a {
+    &__btn{
         color: grey;
         text-decoration: none;
         border: 1px solid;
@@ -516,15 +544,12 @@ footer{
         font-size: 13px;
         padding: 7px 30px;
         line-height: 47px;
-    }
-    
-    & .btn-footer:hover {
-        text-decoration: none;
-    }
-
-    & .txt-footer{
         text-decoration:none;
         list-style: none;
+    }
+
+    &__btn:hover {
+        text-decoration: none;
     }
 
     & a:hover 
@@ -533,65 +558,100 @@ footer{
         color: #f5f5f5 !important;
     }
 
-    & .social-face
-    {
-        width:35px;
-        height:35px;
+    &__txt{
+        color: grey;
+        text-decoration: none;
+        list-style: none;
+        font-size: 12px; 
+        text-decoration:none;
+        list-style: none;
     }
 
-    & .social-insta
-    {
-        width:35px;
-        height:35px;
+    &__social{
+        @include tamanio ( 35px,35px);
+        margin-left:10px;
     }
-
-    & .social-twit
-    {
-        width:35px;
-        height:35px;
-    }
-
+    
 }
 
-::placeholder 
-{
+::placeholder {
     font-size: 10px;
     padding-left: 10px;
     font-style: italic;
 }
 
-
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5 !important; 
+}
 
 /*__________________________________________*/
 /*PAGINAS*/
-.container-fluid1
-{
-    width: 100%;
-    
-    &__tituloSk
-    {
+.pages{
+    &__titulo{
         margin-top: 100px;
         font-size: 50px;
         margin-left: 40px;
         font-weight: 700;
     }
+    &__img{
+        display:block;
+        width: 100%;    
+        height: 400px;
+        object-fit: cover;
+    }
 }
-
 
 /*__________________________________________*/
-.container-fluid2
-{
-    width: 100%;
+/*Iconos prev 1 2  ant */
+.center{
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:40px;
+}
+.pagination {
+    display: inline-block;
 }
 
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: tomato;
+    color: white;
+    border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/*___________________*/
+.tshirt__card{
+    width: auto;
+    height: auto;
+}
+
+.pages__tshirt{
+    display: block;
+    object-fit:cover;
+    width:100vw;
+    height: 95vh;
+}
 
 /*___________________*/
 /* Registrarse*/
 
 .contact-form{
-    background: #fff;
+    background: tomato;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 220px;
     width: 70%;
 
     &.form-control{
@@ -602,7 +662,7 @@ footer{
         padding: 14%;
     }
     &-form form .row{
-        margin-bottom: -7%;
+        margin-bottom: 10%;
     }
     &-form h3{
         margin-bottom: 8%;
@@ -610,21 +670,19 @@ footer{
         text-align: center;
         color:#97858D;
     }
-    &-form .btnContact 
+    &-form .btnContact1 
     {
         width: 50%;
         border: none;
         border-radius: 1rem;
         padding: 1.5%;
-        background: #dc3545;
         font-weight: 600;
         color: #fff;
         cursor: pointer;
     }
+    }
     
 
-
-}
 
 
 .btnContactSubmit
@@ -638,85 +696,9 @@ footer{
     cursor: pointer;
 }
 
-/*___________________*/
-/* Suscripcion*/
 
-.newsletter-subscribe 
-{
-    color:#313437;
-    background-color:#fff;
-    padding:100px 100px;
 
-    & p {
-        color:#7d8285;
-        line-height:1.5;
-    }
 
-    & h2 {
-    font-size:24px;
-    font-weight:bold;
-    margin-bottom:25px;
-    line-height:1.5;
-    padding-top:0;
-    margin-top:0;
-    color:inherit;
-    }
-
-    &.intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto 25px;
-    }
-    
-    &.intro p {
-    margin-bottom:35px;
-    }
-
-    & form {
-    justify-content:center;
-    }
-
-    & form .form-control{
-    background:#eff1f4;
-    border:none;
-    border-radius:3px;
-    box-shadow:none;
-    outline:none;
-    color:inherit;
-    text-indent:9px;
-    height:45px;
-    margin-right:10px;
-    min-width:250px;
-    }
-
-    & form .btn {
-    padding:16px 32px;
-    border:none;
-    background:none;
-    box-shadow:none;
-    text-shadow:none;
-    opacity:0.9;
-    text-transform:uppercase;
-    font-weight:bold;
-    font-size:13px;
-    letter-spacing:0.4px;
-    line-height:1;
-    }
-
-    & form .btn:hover {
-        opacity:1;
-    }
-    
-    & form .btn:active {
-    transform:translateY(1px);
-    }
-
-    & form .btn-primary {
-    background-color:#055ada !important;
-    color:#fff;
-    outline:none !important;
-    }
-}
 
 /*_______________________________*/
 /* Inicio de sesion*/
@@ -739,3 +721,24 @@ footer{
 .btn{
     border: 1px solid black;
 }
+
+/*___________________*/
+/* GUIA DE TALLES*/
+.guiadetalles{
+    display: flex;
+    margin-top: 200px;
+}
+
+.guiadetalles__titulo{
+    font-size: 20px;
+    font-weight: 200;
+    
+}
+
+.guiadetalles__subt{
+    @extend.guiadetalles__titulo;
+    font-size: 5px;
+}
+
+
+
