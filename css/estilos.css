@@ -1,7 +1,247 @@
 @charset "UTF-8";
 /* VARIABLES*/
+/*@each*/
+.mt-2 {
+  margin-top: 2px; }
+
+.mt-9 {
+  margin-top: 9px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-35 {
+  margin-top: 35px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-60 {
+  margin-top: 60px; }
+
+.mt-80 {
+  margin-top: 80px; }
+
+.mt-85 {
+  margin-top: 85px; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.mt-120 {
+  margin-top: 120px; }
+
+.mt-130 {
+  margin-top: 130px; }
+
+.mt-150 {
+  margin-top: 150px; }
+
+.mt-160 {
+  margin-top: 160px; }
+
+.mt-200 {
+  margin-top: 200px; }
+
+.mt-220 {
+  margin-top: 220px; }
+
+.mt-350 {
+  margin-top: 350px; }
+
+.mr-2 {
+  margin-right: 2px; }
+
+.mr-9 {
+  margin-right: 9px; }
+
+.mr-10 {
+  margin-right: 10px; }
+
+.mr-20 {
+  margin-right: 20px; }
+
+.mr-25 {
+  margin-right: 25px; }
+
+.mr-30 {
+  margin-right: 30px; }
+
+.mr-35 {
+  margin-right: 35px; }
+
+.mr-40 {
+  margin-right: 40px; }
+
+.mr-50 {
+  margin-right: 50px; }
+
+.mr-60 {
+  margin-right: 60px; }
+
+.mr-80 {
+  margin-right: 80px; }
+
+.mr-85 {
+  margin-right: 85px; }
+
+.mr-100 {
+  margin-right: 100px; }
+
+.mr-120 {
+  margin-right: 120px; }
+
+.mr-130 {
+  margin-right: 130px; }
+
+.mr-150 {
+  margin-right: 150px; }
+
+.mr-160 {
+  margin-right: 160px; }
+
+.mr-200 {
+  margin-right: 200px; }
+
+.mr-220 {
+  margin-right: 220px; }
+
+.mr-350 {
+  margin-right: 350px; }
+
+.mb-2 {
+  margin-bottom: 2px; }
+
+.mb-9 {
+  margin-bottom: 9px; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-25 {
+  margin-bottom: 25px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-35 {
+  margin-bottom: 35px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+.mb-80 {
+  margin-bottom: 80px; }
+
+.mb-85 {
+  margin-bottom: 85px; }
+
+.mb-100 {
+  margin-bottom: 100px; }
+
+.mb-120 {
+  margin-bottom: 120px; }
+
+.mb-130 {
+  margin-bottom: 130px; }
+
+.mb-150 {
+  margin-bottom: 150px; }
+
+.mb-160 {
+  margin-bottom: 160px; }
+
+.mb-200 {
+  margin-bottom: 200px; }
+
+.mb-220 {
+  margin-bottom: 220px; }
+
+.mb-350 {
+  margin-bottom: 350px; }
+
+.ml-2 {
+  margin-left: 2px; }
+
+.ml-9 {
+  margin-left: 9px; }
+
+.ml-10 {
+  margin-left: 10px; }
+
+.ml-20 {
+  margin-left: 20px; }
+
+.ml-25 {
+  margin-left: 25px; }
+
+.ml-30 {
+  margin-left: 30px; }
+
+.ml-35 {
+  margin-left: 35px; }
+
+.ml-40 {
+  margin-left: 40px; }
+
+.ml-50 {
+  margin-left: 50px; }
+
+.ml-60 {
+  margin-left: 60px; }
+
+.ml-80 {
+  margin-left: 80px; }
+
+.ml-85 {
+  margin-left: 85px; }
+
+.ml-100 {
+  margin-left: 100px; }
+
+.ml-120 {
+  margin-left: 120px; }
+
+.ml-130 {
+  margin-left: 130px; }
+
+.ml-150 {
+  margin-left: 150px; }
+
+.ml-160 {
+  margin-left: 160px; }
+
+.ml-200 {
+  margin-left: 200px; }
+
+.ml-220 {
+  margin-left: 220px; }
+
+.ml-350 {
+  margin-left: 350px; }
+
 /*Mixins*/
-/*Mapas*/
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9370,8 +9610,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   opacity: 0;
   transition: .3s ease;
   background-color: rgba(151, 133, 141, 0.6); }
@@ -9407,7 +9647,7 @@ body {
 
 .venta__subts {
   margin-bottom: 60px;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 400; }
 
 /*____________________________________________*/
@@ -9530,15 +9770,11 @@ footer {
   position: relative; }
 
 .footer__btn {
-  color: grey;
-  text-decoration: none;
   border: 1px solid;
   border-radius: 43px;
   font-size: 13px;
   padding: 7px 30px;
-  line-height: 47px;
-  text-decoration: none;
-  list-style: none; }
+  line-height: 47px; }
 
 .footer__btn:hover {
   text-decoration: none; }
@@ -9547,10 +9783,8 @@ footer {
   text-decoration: none;
   color: #f5f5f5 !important; }
 
-.footer__txt {
+.footer__txt, .footer__btn {
   color: grey;
-  text-decoration: none;
-  list-style: none;
   font-size: 12px;
   text-decoration: none;
   list-style: none; }
@@ -9677,13 +9911,3 @@ a:hover {
 
 /*___________________*/
 /* GUIA DE TALLES*/
-.guiadetalles {
-  display: flex;
-  margin-top: 200px; }
-
-.guiadetalles__titulo, .guiadetalles__subt {
-  font-size: 20px;
-  font-weight: 200; }
-
-.guiadetalles__subt {
-  font-size: 5px; }
