@@ -9385,9 +9385,10 @@ body {
 
 /*_______________________*/
 /*MENU*/
-.row > * {
-  border: 2px solid black; }
-
+/*
+.row>*{
+    border:2px solid black;
+}*/
 .marquesina {
   width: 100%;
   margin-top: 80px;
@@ -9811,7 +9812,9 @@ a:hover {
   display: block;
   width: 100%;
   height: 400px;
-  object-fit: cover; }
+  object-fit: contain;
+  min-width: 100%;
+  background-color: black; }
 
 /*__________________________________________*/
 /*Iconos prev 1 2  ant */

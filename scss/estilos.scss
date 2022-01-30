@@ -86,10 +86,10 @@ body{
 
 /*_______________________*/
 /*MENU*/
-
+/*
 .row>*{
     border:2px solid black;
-}
+}*/
 
 
 .marquesina{
@@ -335,7 +335,7 @@ body{
 /*Galeria de imagenes*/
 .galeria{
     object-fit: contain;
-    
+
     &__img1{
         @include tamanio (500px,700px);
         max-width: 100%;
@@ -633,11 +633,15 @@ a:hover {
         font-size: 50px;
         margin-left: 40px;
         font-weight: map-get($fontWeight,"bold");
+        
     }
     &__img{
         display:block;
         @include tamanio (100%,400px);
-        object-fit: cover;
+        object-fit:contain;
+        min-width: 100%;
+        background-color: black;
+
     }
 }
 
