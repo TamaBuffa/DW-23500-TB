@@ -9385,11 +9385,9 @@ body {
 
 /*_______________________*/
 /*MENU*/
-/*
-.row>*{
-    border:2px solid black;
-}
-*/
+.row > * {
+  border: 2px solid black; }
+
 .marquesina {
   width: 100%;
   margin-top: 80px;
@@ -9447,8 +9445,9 @@ body {
 /*__________________________*/
 /*Carrousel 1 T-SHIRT titulo-subtitulo */
 .carrouselTshirt {
-  width: 65%;
-  margin-left: 85px; }
+  width: 60%;
+  display: block;
+  margin: auto; }
   .carrouselTshirt__titulo {
     font-size: 40px;
     font-weight: 700;
@@ -9458,16 +9457,13 @@ body {
     font-size: 20px;
     margin-left: 2px;
     font-weight: 700;
-    text-align: center;
-    color: #97858D; }
+    color: #97858D;
+    text-align: center; }
 
 /*Carrousel 1 T-SHIRT tamaños */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: tomato; }
-
-.carousel slide {
-  width: 80%; }
 
 /*__________________________*/
 /*Shop online */
@@ -9493,8 +9489,7 @@ body {
     display: block;
     margin: auto;
     margin-top: 50px;
-    width: 500px;
-    height: 300px; }
+    width: auto; }
   .shopOnline__btn {
     display: flex;
     color: white;
@@ -9507,7 +9502,8 @@ body {
     width: 100px;
     height: 40px;
     font-weight: 200;
-    margin-left: 350px; }
+    position: relative;
+    float: right; }
   .shopOnline__btn-grow {
     display: inline-block;
     vertical-align: middle;
@@ -9543,23 +9539,19 @@ body {
 .textoNosotros__titulo1 {
   font-size: 77px;
   font-weight: 700;
-  text-align: center;
-  margin-top: 130px; }
+  text-align: center; }
 
 .textoNosotros__titulo2 {
   font-size: 30px;
   font-weight: 400;
   font-style: italic;
   letter-spacing: 5px;
-  margin-top: 160px;
-  margin-left: 30px; }
+  margin-top: 120px; }
 
 .textoNosotros__parrafo {
   font-size: 20px;
   margin-top: 120px;
-  text-align: center;
-  margin-left: 35px;
-  margin-right: 30px; }
+  text-align: center; }
 
 /*__________________________*/
 /*Cartelofertas*/
@@ -9574,30 +9566,32 @@ body {
 
 /*____________________________________________*/
 /*Galeria de imagenes*/
-.galeria__img1 {
-  width: 500px;
-  height: 700px; }
-
-.galeria__img2 {
-  width: 350px;
-  height: 300px; }
-
-.galeria__img3 {
-  width: 350px;
-  height: 375px;
-  margin-top: 25px; }
-
-.galeria__img4 {
-  width: 350px;
-  height: 300px; }
-
-.galeria__img5 {
-  width: 350px;
-  height: 375px;
-  margin-top: 25px; }
-
-.galeria:hover {
-  opacity: 50%; }
+.galeria {
+  object-fit: contain; }
+  .galeria__img1 {
+    width: 500px;
+    height: 700px;
+    max-width: 100%; }
+  .galeria__img2 {
+    width: 350px;
+    height: 300px;
+    max-width: 100%; }
+  .galeria__img3 {
+    width: 350px;
+    height: 375px;
+    margin-top: 25px;
+    max-width: 100%; }
+  .galeria__img4 {
+    width: 350px;
+    height: 300px;
+    max-width: 100%; }
+  .galeria__img5 {
+    width: 350px;
+    height: 375px;
+    margin-top: 25px;
+    max-width: 100%; }
+  .galeria:hover {
+    opacity: 50%; }
 
 .container1 {
   position: relative;
@@ -9748,7 +9742,9 @@ footer {
   background: #292929;
   width: 100%;
   height: 50%;
-  color: grey; }
+  color: grey;
+  position: relative;
+  width: 100%; }
   footer ul li a {
     color: grey;
     text-decoration: none;
