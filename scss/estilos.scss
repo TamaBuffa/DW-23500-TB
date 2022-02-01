@@ -246,7 +246,7 @@ body{
         @include tamanio ( 100px,40px);
         font-weight: map-get($fontWeight,"light");
         position: relative;
-        float: right;
+        float: left;
     }
 
     &__btn-grow {
@@ -331,10 +331,15 @@ body{
         margin-bottom: 80px;
     }
 }
+
+
 /*____________________________________________*/
 /*Galeria de imagenes*/
 .galeria{
-    object-fit: contain;
+    object-fit: cover;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top:20px;
 
     &__img1{
         @include tamanio (500px,700px);
@@ -349,7 +354,6 @@ body{
     
     &__img3{
         @include tamanio (350px,375px);
-        margin-top: 25px;
         max-width: 100%;
     }
 
@@ -360,7 +364,6 @@ body{
 
     &__img5{
         @include tamanio (350px,375px);
-        margin-top: 25px;
         max-width: 100%;
     }
 
@@ -474,6 +477,7 @@ body{
 .img-thumbnail {
     display: block;
     border: none;
+    object-fit: cover;
     @include tamanio ( 120px,230px);
 }
 
@@ -520,7 +524,7 @@ video{
 /*___________________*/
 /* Suscripcion*/
 
-label{
+.suscripcion__label{
     margin-left: 120px;
 }
 
@@ -533,7 +537,7 @@ label{
 }
 
 .registerbtn {
-    background-color: #04AA6D;
+    background-color: tomato;
     color: white;
     border: none;
     opacity: 0.9;
@@ -686,86 +690,16 @@ a:hover {
     @include tamanio(100vw,95vh);
 }
 
+
+
+
 /*___________________*/
 /* Registrarse*/
 
-.contact-form{
-    background: tomato;
-    margin-top: 10%;
-    margin-bottom: 220px;
-    width: 70%;
-
-    &.form-control{
-        border-radius:1rem;
-    }
-
-    &-form form{
-        padding: 14%;
-    }
-    &-form form .row{
-        margin-bottom: 10%;
-    }
-    &-form h3{
-        margin-bottom: 8%;
-        margin-top: -10%;
-        text-align: center;
-        color:#97858D;
-    }
-    &-form .btnContact1 
-    {
-        width: 50%;
-        border: none;
-        border-radius: 1rem;
-        padding: 1.5%;
-        font-weight:map-get($fontWeight,"medium");
-        color: #fff;
-        cursor: pointer;
-    }
-    }
-    
 
 
 
-.btnContactSubmit
-{
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    color: #fff;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-}
-
-
-
-
-
-/*_______________________________*/
-/* Inicio de sesion*/
-#login{
-    &.container.row.column.box{
-        margin-top: 150px;
-        margin-bottom:200px;
-        max-width: 600px;
-        height: 320px;
-        border: 1px solid black;
-        background-color: white;
-        padding: 20px;
-    }
-    &.container.form{
-        padding: 20px;
-        margin-top: -85px;
-    }
-}
-
-.btn{
-    border: 1px solid black;
-}
-
-/*___________________*/
-/* GUIA DE TALLES*/
-
+/*
 .registrarse {
     display: flex;
     height: 100vh;
@@ -774,8 +708,6 @@ a:hover {
     &__formulario {
         overflow: hidden;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         justify-content: center;
         animation-name: left;
         animation-duration: 1s;
@@ -806,9 +738,8 @@ a:hover {
 
 
 .form {
-    max-width: 80%;
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
 
     & p {
         text-align: right;
@@ -877,6 +808,7 @@ a:hover {
     animation-delay: 2.5s;
 }
 
+
 @keyframes move {
     0% {
         opacity: 0;
@@ -891,6 +823,7 @@ a:hover {
     }
 }
 
+/*
 @keyframes left {
     0% {
         opacity: 0;
@@ -902,6 +835,50 @@ a:hover {
         padding: 20px 40px;
         width: 440px;
     }
+}*/
+
+/*__________________*/
+/*Inicio de sesion*/
+.bg-img {
+    width:100%;
+    height: 180vh;
+    background-image:url(../img/pexels-anna-shvets-5325750.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}   
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #bdbcbc;
+    margin:5px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(221, 214, 214);
+    outline: none;
+}
+
+.container__inicio {
+    padding: 16px 20px;
+    border: none;
+    width: 60%;
+    opacity: 0.9;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
+.container__btn{
+    color: white;
+    background: tomato;
+    cursor: pointer;
+    float:right;
+}
+
+
+.container__inicio:hover {
+    opacity: 1;
+}

@@ -9504,7 +9504,7 @@ body {
     height: 40px;
     font-weight: 200;
     position: relative;
-    float: right; }
+    float: left; }
   .shopOnline__btn-grow {
     display: inline-block;
     vertical-align: middle;
@@ -9568,7 +9568,10 @@ body {
 /*____________________________________________*/
 /*Galeria de imagenes*/
 .galeria {
-  object-fit: contain; }
+  object-fit: cover;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px; }
   .galeria__img1 {
     width: 500px;
     height: 700px;
@@ -9580,7 +9583,6 @@ body {
   .galeria__img3 {
     width: 350px;
     height: 375px;
-    margin-top: 25px;
     max-width: 100%; }
   .galeria__img4 {
     width: 350px;
@@ -9589,7 +9591,6 @@ body {
   .galeria__img5 {
     width: 350px;
     height: 375px;
-    margin-top: 25px;
     max-width: 100%; }
   .galeria:hover {
     opacity: 50%; }
@@ -9682,6 +9683,7 @@ body {
 .img-thumbnail {
   display: block;
   border: none;
+  object-fit: cover;
   width: 120px;
   height: 230px; }
 
@@ -9716,7 +9718,7 @@ video {
 
 /*___________________*/
 /* Suscripcion*/
-label {
+.suscripcion__label {
   margin-left: 120px; }
 
 #email {
@@ -9726,7 +9728,7 @@ label {
   margin-bottom: 50px; }
 
 .registerbtn {
-  background-color: #04AA6D;
+  background-color: tomato;
   color: white;
   border: none;
   opacity: 0.9;
@@ -9856,157 +9858,177 @@ a:hover {
 
 /*___________________*/
 /* Registrarse*/
-.contact-form {
-  background: tomato;
-  margin-top: 10%;
-  margin-bottom: 220px;
-  width: 70%; }
-  .contact-form.form-control {
-    border-radius: 1rem; }
-  .contact-form-form form {
-    padding: 14%; }
-  .contact-form-form form .row {
-    margin-bottom: 10%; }
-  .contact-form-form h3, .contact-form-form .h3 {
-    margin-bottom: 8%;
-    margin-top: -10%;
-    text-align: center;
-    color: #97858D; }
-  .contact-form-form .btnContact1 {
-    width: 50%;
-    border: none;
-    border-radius: 1rem;
-    padding: 1.5%;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer; }
-
-.btnContactSubmit {
-  width: 50%;
-  border-radius: 1rem;
-  padding: 1.5%;
-  color: #fff;
-  background-color: black;
-  border: none;
-  cursor: pointer; }
-
-/*_______________________________*/
-/* Inicio de sesion*/
-#login.container.row.column.box {
-  margin-top: 150px;
-  margin-bottom: 200px;
-  max-width: 600px;
-  height: 320px;
-  border: 1px solid black;
-  background-color: white;
-  padding: 20px; }
-
-#login.container.form {
-  padding: 20px;
-  margin-top: -85px; }
-
-.btn {
-  border: 1px solid black; }
-
-/*___________________*/
-/* GUIA DE TALLES*/
+/*
 .registrarse {
-  display: flex;
-  height: 100vh;
-  margin-bottom: 50px; }
-  .registrarse__formulario {
-    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    animation-name: left;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 1s; }
-  .registrarse__registrarse__titulo > h2, .registrarse__registrarse__titulo > .h2 {
-    margin: 0;
-    color: #070707; }
-  .registrarse__registrarse__titulo > h4, .registrarse__registrarse__titulo > .h4 {
-    margin-top: 10px;
-    font-weight: normal;
-    font-size: 15px; }
+    height: 100vh;
+    margin-bottom: 50px;
+
+    &__formulario {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        animation-name: left;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-delay: 1s;
+    }
+
+    &__registrarse__titulo > h2 {
+        margin: 0;
+        color: #070707;
+    }
+
+    &__registrarse__titulo > h4 {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 15px;
+    }
+}
 
 .imagen__lateral {
-  flex: 1;
-  background-color: black;
-  background-image: url(../img/pexels-anna-shvets-5325750.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+    flex: 1;
+    background-color: black;
+    background-image: url(../img/pexels-anna-shvets-5325750.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .form {
-  max-width: 80%;
-  display: flex;
-  flex-direction: column; }
-  .form p {
-    text-align: right; }
-    .form p a {
-      color: #000;
-      font-size: 14px; }
-  .form button {
-    padding: 12px 10px;
-    border: 0;
-    background: tomato;
-    border-radius: 3px;
-    margin-top: 10px;
-    color: #fff;
-    letter-spacing: 1px; }
-  .form__field {
-    height: 46px;
-    padding: 0 16px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    outline: 0;
-    transition: .2s;
-    margin-top: 20px; }
-  .form__field:focus {
-    border-color: black; }
+    max-width: 100%;
+    display: flex;
+
+    & p {
+        text-align: right;
+    
+        & a {
+            color: #000;
+            font-size: 14px;
+        }
+    }
+
+    & button {
+        padding: 12px 10px;
+        border: 0;
+        background: tomato;
+        border-radius: 3px;
+        margin-top: 10px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    &__field {
+        height: 46px;
+        padding: 0 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        outline: 0;
+        transition: .2s;
+        margin-top: 20px;
+    }
+    &__field:focus {
+        border-color: black;
+    }
+
+}
+
+
 
 .animation {
-  animation-name: move;
-  animation-duration: .4s;
-  animation-fill-mode: both;
-  animation-delay: 2s; }
+    animation-name: move;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
 
 .a1 {
-  animation-delay: 2s; }
+    animation-delay: 2s;
+}
 
 .a2 {
-  animation-delay: 2.1s; }
+    animation-delay: 2.1s;
+}
 
 .a3 {
-  animation-delay: 2.2s; }
+    animation-delay: 2.2s;
+}
 
 .a4 {
-  animation-delay: 2.3s; }
+    animation-delay: 2.3s;
+}
 
 .a5 {
-  animation-delay: 2.4s; }
+    animation-delay: 2.4s;
+}
 
 .a6 {
-  animation-delay: 2.5s; }
+    animation-delay: 2.5s;
+}
+
 
 @keyframes move {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-40px); }
-  100% {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0); } }
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-40px);
+    }
 
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/*
 @keyframes left {
-  0% {
-    opacity: 0;
-    width: 0; }
-  100% {
-    opacity: 1;
-    padding: 20px 40px;
-    width: 440px; } }
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        padding: 20px 40px;
+        width: 440px;
+    }
+}*/
+/*__________________*/
+/*Inicio de sesion*/
+.bg-img {
+  width: 100%;
+  height: 180vh;
+  background-image: url(../img/pexels-anna-shvets-5325750.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #bdbcbc;
+  margin: 5px; }
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd6d6;
+  outline: none; }
+
+.container__inicio {
+  padding: 16px 20px;
+  border: none;
+  width: 60%;
+  opacity: 0.9;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.container__btn {
+  color: white;
+  background: tomato;
+  cursor: pointer;
+  float: right; }
+
+.container__inicio:hover {
+  opacity: 1; }
