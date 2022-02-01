@@ -686,7 +686,7 @@ a:hover {
 .pages__tshirt{
     display: block;
     background-color: white;
-    @include tamanio(100vw,95vh);
+    @include tamanio(180vw,500px);
     object-fit:contain;
 }
 
@@ -695,83 +695,76 @@ a:hover {
 /*___________________*/
 /* Registrarse*/
 
-
-/*
-.registrarse {
+.registrarse
+{
     display: flex;
     height: 100vh;
-    margin-bottom: 50px;
+    width: auto;
+    background-image: url(../img/photo-1531565637446-32307b194362.jfif);
+    background-repeat: no-repeat;
+    background-size:contain;
 
-    &__formulario {
+    &__left {
         overflow: hidden;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        animation-name: left;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-delay: 1s;
     }
 
-    &__registrarse__titulo > h2 {
+    &__header > h2 {
         margin: 0;
-        color: #070707;
+        color: black;
     }
-
-    &__registrarse__titulo > h4 {
+    
+    &__header > h4 {
         margin-top: 10px;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 35px;
+        color:black;
     }
-}
-
-.imagen__lateral {
-    flex: 1;
-    background-color: black;
-    background-image: url(../img/pexels-anna-shvets-5325750.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.form {
-    max-width: 100%;
-    display: flex;
-
-    & p {
+    &__form {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__form  > p {
         text-align: right;
-    
-        & a {
-            color: #000;
-            font-size: 14px;
-        }
     }
-
-    & button {
+    &__form  > p > a {
+        color: black;
+        font-size: 20px;
+    }
+    &__form > button {
         padding: 12px 10px;
         border: 0;
-        background: tomato;
+        background: tomato; 
         border-radius: 3px;
         margin-top: 10px;
         color: #fff;
         letter-spacing: 1px;
-    }
-
-    &__field {
-        height: 46px;
-        padding: 0 16px;
-        border: 2px solid #ddd;
-        border-radius: 4px;
-        outline: 0;
-        transition: .2s;
-        margin-top: 20px;
-    }
-    &__field:focus {
-        border-color: black;
+        font-family: 'Rubik', sans-serif;
     }
 
 }
 
+
+
+.form-field {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+
+    &:focus {
+        border-color: tomato;
+    }
+
+}
 
 
 .animation {
@@ -804,35 +797,7 @@ a:hover {
 .a6 {
     animation-delay: 2.5s;
 }
-
-
-@keyframes move {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-40px);
-    }
-
-    100% {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-}
-
-/*
-@keyframes left {
-    0% {
-        opacity: 0;
-        width: 0;
-    }
-
-    100% {
-        opacity: 1;
-        padding: 20px 40px;
-        width: 440px;
-    }
-}*/
+  
 
 /*__________________*/
 /*Inicio de sesion*/

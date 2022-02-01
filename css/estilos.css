@@ -9853,149 +9853,88 @@ a:hover {
 .pages__tshirt {
   display: block;
   background-color: white;
-  width: 100vw;
-  height: 95vh;
+  width: 180vw;
+  height: 500px;
   object-fit: contain; }
 
 /*___________________*/
 /* Registrarse*/
-/*
 .registrarse {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/photo-1531565637446-32307b194362.jfif);
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .registrarse__left {
+    overflow: hidden;
     display: flex;
-    height: 100vh;
-    margin-bottom: 50px;
-
-    &__formulario {
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        animation-name: left;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-delay: 1s;
-    }
-
-    &__registrarse__titulo > h2 {
-        margin: 0;
-        color: #070707;
-    }
-
-    &__registrarse__titulo > h4 {
-        margin-top: 10px;
-        font-weight: normal;
-        font-size: 15px;
-    }
-}
-
-.imagen__lateral {
-    flex: 1;
-    background-color: black;
-    background-image: url(../img/pexels-anna-shvets-5325750.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.form {
-    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; }
+  .registrarse__header > h2, .registrarse__header > .h2 {
+    margin: 0;
+    color: black; }
+  .registrarse__header > h4, .registrarse__header > .h4 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 35px;
+    color: black; }
+  .registrarse__form {
+    max-width: 80%;
     display: flex;
+    flex-direction: column; }
+  .registrarse__form > p {
+    text-align: right; }
+  .registrarse__form > p > a {
+    color: black;
+    font-size: 20px; }
+  .registrarse__form > button {
+    padding: 12px 10px;
+    border: 0;
+    background: tomato;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif; }
 
-    & p {
-        text-align: right;
-    
-        & a {
-            color: #000;
-            font-size: 14px;
-        }
-    }
-
-    & button {
-        padding: 12px 10px;
-        border: 0;
-        background: tomato;
-        border-radius: 3px;
-        margin-top: 10px;
-        color: #fff;
-        letter-spacing: 1px;
-    }
-
-    &__field {
-        height: 46px;
-        padding: 0 16px;
-        border: 2px solid #ddd;
-        border-radius: 4px;
-        outline: 0;
-        transition: .2s;
-        margin-top: 20px;
-    }
-    &__field:focus {
-        border-color: black;
-    }
-
-}
-
-
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  outline: 0;
+  transition: .2s;
+  margin-top: 20px; }
+  .form-field:focus {
+    border-color: tomato; }
 
 .animation {
-    animation-name: move;
-    animation-duration: .4s;
-    animation-fill-mode: both;
-    animation-delay: 2s;
-}
+  animation-name: move;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-delay: 2s; }
 
 .a1 {
-    animation-delay: 2s;
-}
+  animation-delay: 2s; }
 
 .a2 {
-    animation-delay: 2.1s;
-}
+  animation-delay: 2.1s; }
 
 .a3 {
-    animation-delay: 2.2s;
-}
+  animation-delay: 2.2s; }
 
 .a4 {
-    animation-delay: 2.3s;
-}
+  animation-delay: 2.3s; }
 
 .a5 {
-    animation-delay: 2.4s;
-}
+  animation-delay: 2.4s; }
 
 .a6 {
-    animation-delay: 2.5s;
-}
+  animation-delay: 2.5s; }
 
-
-@keyframes move {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-40px);
-    }
-
-    100% {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-}
-
-/*
-@keyframes left {
-    0% {
-        opacity: 0;
-        width: 0;
-    }
-
-    100% {
-        opacity: 1;
-        padding: 20px 40px;
-        width: 440px;
-    }
-}*/
 /*__________________*/
 /*Inicio de sesion*/
 .bg-img {
