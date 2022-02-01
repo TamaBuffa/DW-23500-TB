@@ -644,8 +644,7 @@ a:hover {
         @include tamanio (100%,400px);
         object-fit:contain;
         min-width: 100%;
-        background-color: black;
-
+        background-color: white;
     }
 }
 
@@ -686,17 +685,15 @@ a:hover {
 
 .pages__tshirt{
     display: block;
-    object-fit:cover;
+    background-color: white;
     @include tamanio(100vw,95vh);
+    object-fit:contain;
 }
-
 
 
 
 /*___________________*/
 /* Registrarse*/
-
-
 
 
 /*

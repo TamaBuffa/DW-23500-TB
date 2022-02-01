@@ -9816,7 +9816,7 @@ a:hover {
   height: 400px;
   object-fit: contain;
   min-width: 100%;
-  background-color: black; }
+  background-color: white; }
 
 /*__________________________________________*/
 /*Iconos prev 1 2  ant */
@@ -9852,9 +9852,10 @@ a:hover {
 
 .pages__tshirt {
   display: block;
-  object-fit: cover;
+  background-color: white;
   width: 100vw;
-  height: 95vh; }
+  height: 95vh;
+  object-fit: contain; }
 
 /*___________________*/
 /* Registrarse*/
